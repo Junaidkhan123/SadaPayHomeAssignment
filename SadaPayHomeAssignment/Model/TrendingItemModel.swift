@@ -8,4 +8,5 @@
 import Foundation
 struct TrendingItemModel {
     var name: String
+    var repoDescription: String?
 }
