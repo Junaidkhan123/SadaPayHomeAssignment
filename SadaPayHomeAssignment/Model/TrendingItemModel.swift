@@ -8,5 +8,7 @@
 import Foundation
 struct TrendingItemModel {
     var name: String
-    var repoDescription: String?
+    var repoDescription: String
+    var language: String?
+    var starCount: Int
 }

@@ -166,7 +166,7 @@
 		39B0E45C295253E000006043 /* SadaPayHomeAssignmentTests */ = {
 			isa = PBXGroup;
 			children = (
-				39B0E4732952543A00006043 /* TrendingItemModelTests.swift */,
+				39B0E47729525A1C00006043 /* Test Models */,
 			);
 			path = SadaPayHomeAssignmentTests;
 			sourceTree = "<group>";
@@ -176,6 +176,14 @@
 			children = (
 			);
 			path = SadaPayHomeAssignmentUITests;
+			sourceTree = "<group>";
+		};
+		39B0E47729525A1C00006043 /* Test Models */ = {
+			isa = PBXGroup;
+			children = (
+				39B0E4732952543A00006043 /* TrendingItemModelTests.swift */,
+			);
+			path = "Test Models";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
