@@ -1,34 +1,42 @@
 @testable import SadaPayHomeAssignment
 import XCTest
 
+enum TrendingItemModelStrings {
+    static var name = "swift"
+    static var repoDescription = "The Swift Programming Language"
+    static var language = "C#"
+    static var starCount = 514
+}
+
 final class TrendingItemModelTests: XCTestCase {
 
     func test_WhenInitilized_withAllProperties_ThenReturnsActualData() {
 
-        let name = "swift"
-        let repoDescription = "The Swift Programming Language"
-        let language = "C#"
-        let starCount = 514
-        let sut = TrendingItemModel(name: name,
-                                    repoDescription:repoDescription,
-                                    language: language,
-                                    starCount: starCount)
-        XCTAssertEqual(sut.name, name)
-        XCTAssertEqual(sut.repoDescription, repoDescription)
-        XCTAssertEqual(sut.language, language)
-        XCTAssertEqual(sut.starCount, starCount)
+        let sut = makeSut(name: TrendingItemModelStrings.name,
+                          repoDescription: TrendingItemModelStrings.repoDescription,
+                          language: TrendingItemModelStrings.language,
+                          starCount: TrendingItemModelStrings.starCount)
+
+        XCTAssertEqual(sut.name, TrendingItemModelStrings.name)
+        XCTAssertEqual(sut.repoDescription, TrendingItemModelStrings.repoDescription)
+        XCTAssertEqual(sut.language, TrendingItemModelStrings.language)
+        XCTAssertEqual(sut.starCount, TrendingItemModelStrings.starCount)
     }
 
     func test_WhenInitilized_withNullLanguageProperty_ThenReturnsLanguagePropertyNull() {
-        let name = "swift"
-        let repoDescription = "The Swift Programming Language"
-        let starCount = 514
-        let sut = TrendingItemModel(name: name,
-                                    repoDescription:repoDescription,
-                                    starCount: starCount)
-        XCTAssertEqual(sut.name, name)
-        XCTAssertEqual(sut.repoDescription, repoDescription)
+        let sut = makeSut(name: TrendingItemModelStrings.name,
+                          repoDescription: TrendingItemModelStrings.repoDescription,
+                          starCount: TrendingItemModelStrings.starCount)
+
         XCTAssertNil(sut.language)
-        XCTAssertEqual(sut.starCount, starCount)
+    }
+
+     // MARK: - Helper method for making Sut
+    func makeSut(name: String, repoDescription: String, language: String? = nil, starCount: Int ) -> TrendingItemModel{
+        let model = TrendingItemModel(name: name,
+                                      repoDescription:repoDescription,
+                                      language: language,
+                                      starCount: starCount)
+        return model
     }
 }
