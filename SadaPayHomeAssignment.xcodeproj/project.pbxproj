@@ -17,6 +17,7 @@
 		392BAB962952172B0043F668 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 392BAB952952172B0043F668 /* Kingfisher */; };
 		392BABA3295222C40043F668 /* networkError_lottie.json in Resources */ = {isa = PBXBuildFile; fileRef = 392BABA2295222C30043F668 /* networkError_lottie.json */; };
 		39B0E4742952543A00006043 /* TrendingItemModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39B0E4732952543A00006043 /* TrendingItemModelTests.swift */; };
+		39B0E4762952572600006043 /* TrendingItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39B0E4752952572600006043 /* TrendingItemModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,7 @@
 		39B0E45B295253E000006043 /* SadaPayHomeAssignmentTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SadaPayHomeAssignmentTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		39B0E468295253E800006043 /* SadaPayHomeAssignmentUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SadaPayHomeAssignmentUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		39B0E4732952543A00006043 /* TrendingItemModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingItemModelTests.swift; sourceTree = "<group>"; };
+		39B0E4752952572600006043 /* TrendingItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingItemModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,6 +150,7 @@
 		392BAB9C295218EC0043F668 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				39B0E4752952572600006043 /* TrendingItemModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -318,6 +321,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				392BAB62295212560043F668 /* ViewController.swift in Sources */,
+				39B0E4762952572600006043 /* TrendingItemModel.swift in Sources */,
 				392BAB5E295212560043F668 /* AppDelegate.swift in Sources */,
 				392BAB60295212560043F668 /* SceneDelegate.swift in Sources */,
 			);
