@@ -1,0 +1,601 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		392BAB5E295212560043F668 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 392BAB5D295212560043F668 /* AppDelegate.swift */; };
+		392BAB60295212560043F668 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 392BAB5F295212560043F668 /* SceneDelegate.swift */; };
+		392BAB62295212560043F668 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 392BAB61295212560043F668 /* ViewController.swift */; };
+		392BAB65295212560043F668 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 392BAB63295212560043F668 /* Main.storyboard */; };
+		392BAB67295212580043F668 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 392BAB66295212580043F668 /* Assets.xcassets */; };
+		392BAB6A295212580043F668 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 392BAB68295212580043F668 /* LaunchScreen.storyboard */; };
+		392BAB75295212590043F668 /* SadaPayHomeAssignmentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 392BAB74295212590043F668 /* SadaPayHomeAssignmentTests.swift */; };
+		392BAB7F295212590043F668 /* SadaPayHomeAssignmentUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 392BAB7E295212590043F668 /* SadaPayHomeAssignmentUITests.swift */; };
+		392BAB81295212590043F668 /* SadaPayHomeAssignmentUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 392BAB80295212590043F668 /* SadaPayHomeAssignmentUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		392BAB71295212590043F668 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 392BAB52295212560043F668 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 392BAB59295212560043F668;
+			remoteInfo = SadaPayHomeAssignment;
+		};
+		392BAB7B295212590043F668 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 392BAB52295212560043F668 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 392BAB59295212560043F668;
+			remoteInfo = SadaPayHomeAssignment;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		392BAB5A295212560043F668 /* SadaPayHomeAssignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SadaPayHomeAssignment.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		392BAB5D295212560043F668 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		392BAB5F295212560043F668 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		392BAB61295212560043F668 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		392BAB64295212560043F668 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		392BAB66295212580043F668 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		392BAB69295212580043F668 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		392BAB6B295212580043F668 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		392BAB70295212590043F668 /* SadaPayHomeAssignmentTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SadaPayHomeAssignmentTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		392BAB74295212590043F668 /* SadaPayHomeAssignmentTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SadaPayHomeAssignmentTests.swift; sourceTree = "<group>"; };
+		392BAB7A295212590043F668 /* SadaPayHomeAssignmentUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SadaPayHomeAssignmentUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		392BAB7E295212590043F668 /* SadaPayHomeAssignmentUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SadaPayHomeAssignmentUITests.swift; sourceTree = "<group>"; };
+		392BAB80295212590043F668 /* SadaPayHomeAssignmentUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SadaPayHomeAssignmentUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		392BAB57295212560043F668 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		392BAB6D295212590043F668 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		392BAB77295212590043F668 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		392BAB51295212560043F668 = {
+			isa = PBXGroup;
+			children = (
+				392BAB5C295212560043F668 /* SadaPayHomeAssignment */,
+				392BAB73295212590043F668 /* SadaPayHomeAssignmentTests */,
+				392BAB7D295212590043F668 /* SadaPayHomeAssignmentUITests */,
+				392BAB5B295212560043F668 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		392BAB5B295212560043F668 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				392BAB5A295212560043F668 /* SadaPayHomeAssignment.app */,
+				392BAB70295212590043F668 /* SadaPayHomeAssignmentTests.xctest */,
+				392BAB7A295212590043F668 /* SadaPayHomeAssignmentUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		392BAB5C295212560043F668 /* SadaPayHomeAssignment */ = {
+			isa = PBXGroup;
+			children = (
+				392BAB5D295212560043F668 /* AppDelegate.swift */,
+				392BAB5F295212560043F668 /* SceneDelegate.swift */,
+				392BAB61295212560043F668 /* ViewController.swift */,
+				392BAB63295212560043F668 /* Main.storyboard */,
+				392BAB66295212580043F668 /* Assets.xcassets */,
+				392BAB68295212580043F668 /* LaunchScreen.storyboard */,
+				392BAB6B295212580043F668 /* Info.plist */,
+			);
+			path = SadaPayHomeAssignment;
+			sourceTree = "<group>";
+		};
+		392BAB73295212590043F668 /* SadaPayHomeAssignmentTests */ = {
+			isa = PBXGroup;
+			children = (
+				392BAB74295212590043F668 /* SadaPayHomeAssignmentTests.swift */,
+			);
+			path = SadaPayHomeAssignmentTests;
+			sourceTree = "<group>";
+		};
+		392BAB7D295212590043F668 /* SadaPayHomeAssignmentUITests */ = {
+			isa = PBXGroup;
+			children = (
+				392BAB7E295212590043F668 /* SadaPayHomeAssignmentUITests.swift */,
+				392BAB80295212590043F668 /* SadaPayHomeAssignmentUITestsLaunchTests.swift */,
+			);
+			path = SadaPayHomeAssignmentUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		392BAB59295212560043F668 /* SadaPayHomeAssignment */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 392BAB84295212590043F668 /* Build configuration list for PBXNativeTarget "SadaPayHomeAssignment" */;
+			buildPhases = (
+				392BAB56295212560043F668 /* Sources */,
+				392BAB57295212560043F668 /* Frameworks */,
+				392BAB58295212560043F668 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SadaPayHomeAssignment;
+			productName = SadaPayHomeAssignment;
+			productReference = 392BAB5A295212560043F668 /* SadaPayHomeAssignment.app */;
+			productType = "com.apple.product-type.application";
+		};
+		392BAB6F295212590043F668 /* SadaPayHomeAssignmentTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 392BAB87295212590043F668 /* Build configuration list for PBXNativeTarget "SadaPayHomeAssignmentTests" */;
+			buildPhases = (
+				392BAB6C295212590043F668 /* Sources */,
+				392BAB6D295212590043F668 /* Frameworks */,
+				392BAB6E295212590043F668 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				392BAB72295212590043F668 /* PBXTargetDependency */,
+			);
+			name = SadaPayHomeAssignmentTests;
+			productName = SadaPayHomeAssignmentTests;
+			productReference = 392BAB70295212590043F668 /* SadaPayHomeAssignmentTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		392BAB79295212590043F668 /* SadaPayHomeAssignmentUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 392BAB8A295212590043F668 /* Build configuration list for PBXNativeTarget "SadaPayHomeAssignmentUITests" */;
+			buildPhases = (
+				392BAB76295212590043F668 /* Sources */,
+				392BAB77295212590043F668 /* Frameworks */,
+				392BAB78295212590043F668 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				392BAB7C295212590043F668 /* PBXTargetDependency */,
+			);
+			name = SadaPayHomeAssignmentUITests;
+			productName = SadaPayHomeAssignmentUITests;
+			productReference = 392BAB7A295212590043F668 /* SadaPayHomeAssignmentUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		392BAB52295212560043F668 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					392BAB59295212560043F668 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					392BAB6F295212590043F668 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 392BAB59295212560043F668;
+					};
+					392BAB79295212590043F668 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 392BAB59295212560043F668;
+					};
+				};
+			};
+			buildConfigurationList = 392BAB55295212560043F668 /* Build configuration list for PBXProject "SadaPayHomeAssignment" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 392BAB51295212560043F668;
+			productRefGroup = 392BAB5B295212560043F668 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				392BAB59295212560043F668 /* SadaPayHomeAssignment */,
+				392BAB6F295212590043F668 /* SadaPayHomeAssignmentTests */,
+				392BAB79295212590043F668 /* SadaPayHomeAssignmentUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		392BAB58295212560043F668 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				392BAB6A295212580043F668 /* LaunchScreen.storyboard in Resources */,
+				392BAB67295212580043F668 /* Assets.xcassets in Resources */,
+				392BAB65295212560043F668 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		392BAB6E295212590043F668 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		392BAB78295212590043F668 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		392BAB56295212560043F668 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				392BAB62295212560043F668 /* ViewController.swift in Sources */,
+				392BAB5E295212560043F668 /* AppDelegate.swift in Sources */,
+				392BAB60295212560043F668 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		392BAB6C295212590043F668 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				392BAB75295212590043F668 /* SadaPayHomeAssignmentTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		392BAB76295212590043F668 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				392BAB81295212590043F668 /* SadaPayHomeAssignmentUITestsLaunchTests.swift in Sources */,
+				392BAB7F295212590043F668 /* SadaPayHomeAssignmentUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		392BAB72295212590043F668 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 392BAB59295212560043F668 /* SadaPayHomeAssignment */;
+			targetProxy = 392BAB71295212590043F668 /* PBXContainerItemProxy */;
+		};
+		392BAB7C295212590043F668 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 392BAB59295212560043F668 /* SadaPayHomeAssignment */;
+			targetProxy = 392BAB7B295212590043F668 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		392BAB63295212560043F668 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				392BAB64295212560043F668 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		392BAB68295212580043F668 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				392BAB69295212580043F668 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		392BAB82295212590043F668 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		392BAB83295212590043F668 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		392BAB85295212590043F668 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SadaPayHomeAssignment/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.junaid.SadaPayHomeAssignment;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		392BAB86295212590043F668 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SadaPayHomeAssignment/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.junaid.SadaPayHomeAssignment;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		392BAB88295212590043F668 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.junaid.SadaPayHomeAssignmentTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SadaPayHomeAssignment.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SadaPayHomeAssignment";
+			};
+			name = Debug;
+		};
+		392BAB89295212590043F668 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.junaid.SadaPayHomeAssignmentTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SadaPayHomeAssignment.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SadaPayHomeAssignment";
+			};
+			name = Release;
+		};
+		392BAB8B295212590043F668 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.junaid.SadaPayHomeAssignmentUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SadaPayHomeAssignment;
+			};
+			name = Debug;
+		};
+		392BAB8C295212590043F668 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.junaid.SadaPayHomeAssignmentUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SadaPayHomeAssignment;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		392BAB55295212560043F668 /* Build configuration list for PBXProject "SadaPayHomeAssignment" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				392BAB82295212590043F668 /* Debug */,
+				392BAB83295212590043F668 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		392BAB84295212590043F668 /* Build configuration list for PBXNativeTarget "SadaPayHomeAssignment" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				392BAB85295212590043F668 /* Debug */,
+				392BAB86295212590043F668 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		392BAB87295212590043F668 /* Build configuration list for PBXNativeTarget "SadaPayHomeAssignmentTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				392BAB88295212590043F668 /* Debug */,
+				392BAB89295212590043F668 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		392BAB8A295212590043F668 /* Build configuration list for PBXNativeTarget "SadaPayHomeAssignmentUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				392BAB8B295212590043F668 /* Debug */,
+				392BAB8C295212590043F668 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 392BAB52295212560043F668 /* Project object */;
+}
