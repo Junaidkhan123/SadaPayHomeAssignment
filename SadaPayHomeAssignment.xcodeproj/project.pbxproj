@@ -16,17 +16,18 @@
 		392BAB93295216950043F668 /* SkeletonView in Frameworks */ = {isa = PBXBuildFile; productRef = 392BAB92295216950043F668 /* SkeletonView */; };
 		392BAB962952172B0043F668 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 392BAB952952172B0043F668 /* Kingfisher */; };
 		392BABA3295222C40043F668 /* networkError_lottie.json in Resources */ = {isa = PBXBuildFile; fileRef = 392BABA2295222C30043F668 /* networkError_lottie.json */; };
+		39B0E4742952543A00006043 /* TrendingItemModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39B0E4732952543A00006043 /* TrendingItemModelTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		392BAB71295212590043F668 /* PBXContainerItemProxy */ = {
+		39B0E45F295253E000006043 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 392BAB52295212560043F668 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 392BAB59295212560043F668;
 			remoteInfo = SadaPayHomeAssignment;
 		};
-		392BAB7B295212590043F668 /* PBXContainerItemProxy */ = {
+		39B0E46E295253E800006043 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 392BAB52295212560043F668 /* Project object */;
 			proxyType = 1;
@@ -43,9 +44,10 @@
 		392BAB66295212580043F668 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		392BAB69295212580043F668 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		392BAB6B295212580043F668 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		392BAB70295212590043F668 /* SadaPayHomeAssignmentTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SadaPayHomeAssignmentTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		392BAB7A295212590043F668 /* SadaPayHomeAssignmentUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SadaPayHomeAssignmentUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		392BABA2295222C30043F668 /* networkError_lottie.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = networkError_lottie.json; sourceTree = "<group>"; };
+		39B0E45B295253E000006043 /* SadaPayHomeAssignmentTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SadaPayHomeAssignmentTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		39B0E468295253E800006043 /* SadaPayHomeAssignmentUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SadaPayHomeAssignmentUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		39B0E4732952543A00006043 /* TrendingItemModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingItemModelTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,14 +61,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		392BAB6D295212590043F668 /* Frameworks */ = {
+		39B0E458295253E000006043 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		392BAB77295212590043F668 /* Frameworks */ = {
+		39B0E465295253E800006043 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -80,8 +82,8 @@
 			isa = PBXGroup;
 			children = (
 				392BAB5C295212560043F668 /* SadaPayHomeAssignment */,
-				392BAB73295212590043F668 /* SadaPayHomeAssignmentTests */,
-				392BAB7D295212590043F668 /* SadaPayHomeAssignmentUITests */,
+				39B0E45C295253E000006043 /* SadaPayHomeAssignmentTests */,
+				39B0E469295253E800006043 /* SadaPayHomeAssignmentUITests */,
 				392BAB5B295212560043F668 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -90,8 +92,8 @@
 			isa = PBXGroup;
 			children = (
 				392BAB5A295212560043F668 /* SadaPayHomeAssignment.app */,
-				392BAB70295212590043F668 /* SadaPayHomeAssignmentTests.xctest */,
-				392BAB7A295212590043F668 /* SadaPayHomeAssignmentUITests.xctest */,
+				39B0E45B295253E000006043 /* SadaPayHomeAssignmentTests.xctest */,
+				39B0E468295253E800006043 /* SadaPayHomeAssignmentUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -107,20 +109,6 @@
 				392BAB99295218A90043F668 /* Resources */,
 			);
 			path = SadaPayHomeAssignment;
-			sourceTree = "<group>";
-		};
-		392BAB73295212590043F668 /* SadaPayHomeAssignmentTests */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = SadaPayHomeAssignmentTests;
-			sourceTree = "<group>";
-		};
-		392BAB7D295212590043F668 /* SadaPayHomeAssignmentUITests */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = SadaPayHomeAssignmentUITests;
 			sourceTree = "<group>";
 		};
 		392BAB982952181A0043F668 /* App */ = {
@@ -172,6 +160,21 @@
 			path = "LottieAnimation Files";
 			sourceTree = "<group>";
 		};
+		39B0E45C295253E000006043 /* SadaPayHomeAssignmentTests */ = {
+			isa = PBXGroup;
+			children = (
+				39B0E4732952543A00006043 /* TrendingItemModelTests.swift */,
+			);
+			path = SadaPayHomeAssignmentTests;
+			sourceTree = "<group>";
+		};
+		39B0E469295253E800006043 /* SadaPayHomeAssignmentUITests */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SadaPayHomeAssignmentUITests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -197,40 +200,40 @@
 			productReference = 392BAB5A295212560043F668 /* SadaPayHomeAssignment.app */;
 			productType = "com.apple.product-type.application";
 		};
-		392BAB6F295212590043F668 /* SadaPayHomeAssignmentTests */ = {
+		39B0E45A295253E000006043 /* SadaPayHomeAssignmentTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 392BAB87295212590043F668 /* Build configuration list for PBXNativeTarget "SadaPayHomeAssignmentTests" */;
+			buildConfigurationList = 39B0E461295253E000006043 /* Build configuration list for PBXNativeTarget "SadaPayHomeAssignmentTests" */;
 			buildPhases = (
-				392BAB6C295212590043F668 /* Sources */,
-				392BAB6D295212590043F668 /* Frameworks */,
-				392BAB6E295212590043F668 /* Resources */,
+				39B0E457295253E000006043 /* Sources */,
+				39B0E458295253E000006043 /* Frameworks */,
+				39B0E459295253E000006043 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				392BAB72295212590043F668 /* PBXTargetDependency */,
+				39B0E460295253E000006043 /* PBXTargetDependency */,
 			);
 			name = SadaPayHomeAssignmentTests;
 			productName = SadaPayHomeAssignmentTests;
-			productReference = 392BAB70295212590043F668 /* SadaPayHomeAssignmentTests.xctest */;
+			productReference = 39B0E45B295253E000006043 /* SadaPayHomeAssignmentTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		392BAB79295212590043F668 /* SadaPayHomeAssignmentUITests */ = {
+		39B0E467295253E800006043 /* SadaPayHomeAssignmentUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 392BAB8A295212590043F668 /* Build configuration list for PBXNativeTarget "SadaPayHomeAssignmentUITests" */;
+			buildConfigurationList = 39B0E470295253E800006043 /* Build configuration list for PBXNativeTarget "SadaPayHomeAssignmentUITests" */;
 			buildPhases = (
-				392BAB76295212590043F668 /* Sources */,
-				392BAB77295212590043F668 /* Frameworks */,
-				392BAB78295212590043F668 /* Resources */,
+				39B0E464295253E800006043 /* Sources */,
+				39B0E465295253E800006043 /* Frameworks */,
+				39B0E466295253E800006043 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				392BAB7C295212590043F668 /* PBXTargetDependency */,
+				39B0E46F295253E800006043 /* PBXTargetDependency */,
 			);
 			name = SadaPayHomeAssignmentUITests;
 			productName = SadaPayHomeAssignmentUITests;
-			productReference = 392BAB7A295212590043F668 /* SadaPayHomeAssignmentUITests.xctest */;
+			productReference = 39B0E468295253E800006043 /* SadaPayHomeAssignmentUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -246,11 +249,12 @@
 					392BAB59295212560043F668 = {
 						CreatedOnToolsVersion = 14.2;
 					};
-					392BAB6F295212590043F668 = {
+					39B0E45A295253E000006043 = {
 						CreatedOnToolsVersion = 14.2;
+						LastSwiftMigration = 1420;
 						TestTargetID = 392BAB59295212560043F668;
 					};
-					392BAB79295212590043F668 = {
+					39B0E467295253E800006043 = {
 						CreatedOnToolsVersion = 14.2;
 						TestTargetID = 392BAB59295212560043F668;
 					};
@@ -275,8 +279,8 @@
 			projectRoot = "";
 			targets = (
 				392BAB59295212560043F668 /* SadaPayHomeAssignment */,
-				392BAB6F295212590043F668 /* SadaPayHomeAssignmentTests */,
-				392BAB79295212590043F668 /* SadaPayHomeAssignmentUITests */,
+				39B0E45A295253E000006043 /* SadaPayHomeAssignmentTests */,
+				39B0E467295253E800006043 /* SadaPayHomeAssignmentUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -292,14 +296,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		392BAB6E295212590043F668 /* Resources */ = {
+		39B0E459295253E000006043 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		392BAB78295212590043F668 /* Resources */ = {
+		39B0E466295253E800006043 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -319,14 +323,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		392BAB6C295212590043F668 /* Sources */ = {
+		39B0E457295253E000006043 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				39B0E4742952543A00006043 /* TrendingItemModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		392BAB76295212590043F668 /* Sources */ = {
+		39B0E464295253E800006043 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -336,15 +341,15 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		392BAB72295212590043F668 /* PBXTargetDependency */ = {
+		39B0E460295253E000006043 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 392BAB59295212560043F668 /* SadaPayHomeAssignment */;
-			targetProxy = 392BAB71295212590043F668 /* PBXContainerItemProxy */;
+			targetProxy = 39B0E45F295253E000006043 /* PBXContainerItemProxy */;
 		};
-		392BAB7C295212590043F668 /* PBXTargetDependency */ = {
+		39B0E46F295253E800006043 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 392BAB59295212560043F668 /* SadaPayHomeAssignment */;
-			targetProxy = 392BAB7B295212590043F668 /* PBXContainerItemProxy */;
+			targetProxy = 39B0E46E295253E800006043 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -534,34 +539,45 @@
 			};
 			name = Release;
 		};
-		392BAB88295212590043F668 /* Debug */ = {
+		39B0E462295253E000006043 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.junaid.SadaPayHomeAssignmentTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SadaPayHomeAssignment.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SadaPayHomeAssignment";
 			};
 			name = Debug;
 		};
-		392BAB89295212590043F668 /* Release */ = {
+		39B0E463295253E000006043 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.junaid.SadaPayHomeAssignmentTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -572,13 +588,13 @@
 			};
 			name = Release;
 		};
-		392BAB8B295212590043F668 /* Debug */ = {
+		39B0E471295253E800006043 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.junaid.SadaPayHomeAssignmentUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -589,13 +605,13 @@
 			};
 			name = Debug;
 		};
-		392BAB8C295212590043F668 /* Release */ = {
+		39B0E472295253E800006043 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.junaid.SadaPayHomeAssignmentUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -627,20 +643,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		392BAB87295212590043F668 /* Build configuration list for PBXNativeTarget "SadaPayHomeAssignmentTests" */ = {
+		39B0E461295253E000006043 /* Build configuration list for PBXNativeTarget "SadaPayHomeAssignmentTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				392BAB88295212590043F668 /* Debug */,
-				392BAB89295212590043F668 /* Release */,
+				39B0E462295253E000006043 /* Debug */,
+				39B0E463295253E000006043 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		392BAB8A295212590043F668 /* Build configuration list for PBXNativeTarget "SadaPayHomeAssignmentUITests" */ = {
+		39B0E470295253E800006043 /* Build configuration list for PBXNativeTarget "SadaPayHomeAssignmentUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				392BAB8B295212590043F668 /* Debug */,
-				392BAB8C295212590043F668 /* Release */,
+				39B0E471295253E800006043 /* Debug */,
+				39B0E472295253E800006043 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
