@@ -18,6 +18,7 @@
 		392BAB902952163F0043F668 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 392BAB8F2952163F0043F668 /* Lottie */; };
 		392BAB93295216950043F668 /* SkeletonView in Frameworks */ = {isa = PBXBuildFile; productRef = 392BAB92295216950043F668 /* SkeletonView */; };
 		392BAB962952172B0043F668 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 392BAB952952172B0043F668 /* Kingfisher */; };
+		392BABA3295222C40043F668 /* networkError_lottie.json in Resources */ = {isa = PBXBuildFile; fileRef = 392BABA2295222C30043F668 /* networkError_lottie.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,7 @@
 		392BAB7A295212590043F668 /* SadaPayHomeAssignmentUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SadaPayHomeAssignmentUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		392BAB7E295212590043F668 /* SadaPayHomeAssignmentUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SadaPayHomeAssignmentUITests.swift; sourceTree = "<group>"; };
 		392BAB80295212590043F668 /* SadaPayHomeAssignmentUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SadaPayHomeAssignmentUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		392BABA2295222C30043F668 /* networkError_lottie.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = networkError_lottie.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,12 +105,12 @@
 		392BAB5C295212560043F668 /* SadaPayHomeAssignment */ = {
 			isa = PBXGroup;
 			children = (
-				392BAB5D295212560043F668 /* AppDelegate.swift */,
-				392BAB5F295212560043F668 /* SceneDelegate.swift */,
-				392BAB61295212560043F668 /* ViewController.swift */,
-				392BAB66295212580043F668 /* Assets.xcassets */,
-				392BAB68295212580043F668 /* LaunchScreen.storyboard */,
 				392BAB6B295212580043F668 /* Info.plist */,
+				392BAB9C295218EC0043F668 /* Model */,
+				392BAB982952181A0043F668 /* App */,
+				392BAB9A295218BD0043F668 /* Scenes */,
+				392BAB9B295218CB0043F668 /* Networking */,
+				392BAB99295218A90043F668 /* Resources */,
 			);
 			path = SadaPayHomeAssignment;
 			sourceTree = "<group>";
@@ -128,6 +130,55 @@
 				392BAB80295212590043F668 /* SadaPayHomeAssignmentUITestsLaunchTests.swift */,
 			);
 			path = SadaPayHomeAssignmentUITests;
+			sourceTree = "<group>";
+		};
+		392BAB982952181A0043F668 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				392BAB5D295212560043F668 /* AppDelegate.swift */,
+				392BAB5F295212560043F668 /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		392BAB99295218A90043F668 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				392BAB9D29521FFF0043F668 /* LottieAnimation Files */,
+				392BAB66295212580043F668 /* Assets.xcassets */,
+				392BAB68295212580043F668 /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		392BAB9A295218BD0043F668 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				392BAB61295212560043F668 /* ViewController.swift */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		392BAB9B295218CB0043F668 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		392BAB9C295218EC0043F668 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		392BAB9D29521FFF0043F668 /* LottieAnimation Files */ = {
+			isa = PBXGroup;
+			children = (
+				392BABA2295222C30043F668 /* networkError_lottie.json */,
+			);
+			path = "LottieAnimation Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -244,6 +295,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				392BABA3295222C40043F668 /* networkError_lottie.json in Resources */,
 				392BAB6A295212580043F668 /* LaunchScreen.storyboard in Resources */,
 				392BAB67295212580043F668 /* Assets.xcassets in Resources */,
 			);
