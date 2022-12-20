@@ -10,12 +10,14 @@
 		392BAB5E295212560043F668 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 392BAB5D295212560043F668 /* AppDelegate.swift */; };
 		392BAB60295212560043F668 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 392BAB5F295212560043F668 /* SceneDelegate.swift */; };
 		392BAB62295212560043F668 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 392BAB61295212560043F668 /* ViewController.swift */; };
-		392BAB65295212560043F668 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 392BAB63295212560043F668 /* Main.storyboard */; };
 		392BAB67295212580043F668 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 392BAB66295212580043F668 /* Assets.xcassets */; };
 		392BAB6A295212580043F668 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 392BAB68295212580043F668 /* LaunchScreen.storyboard */; };
 		392BAB75295212590043F668 /* SadaPayHomeAssignmentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 392BAB74295212590043F668 /* SadaPayHomeAssignmentTests.swift */; };
 		392BAB7F295212590043F668 /* SadaPayHomeAssignmentUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 392BAB7E295212590043F668 /* SadaPayHomeAssignmentUITests.swift */; };
 		392BAB81295212590043F668 /* SadaPayHomeAssignmentUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 392BAB80295212590043F668 /* SadaPayHomeAssignmentUITestsLaunchTests.swift */; };
+		392BAB902952163F0043F668 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 392BAB8F2952163F0043F668 /* Lottie */; };
+		392BAB93295216950043F668 /* SkeletonView in Frameworks */ = {isa = PBXBuildFile; productRef = 392BAB92295216950043F668 /* SkeletonView */; };
+		392BAB962952172B0043F668 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 392BAB952952172B0043F668 /* Kingfisher */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,7 +42,6 @@
 		392BAB5D295212560043F668 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		392BAB5F295212560043F668 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		392BAB61295212560043F668 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		392BAB64295212560043F668 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		392BAB66295212580043F668 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		392BAB69295212580043F668 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		392BAB6B295212580043F668 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -56,6 +57,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				392BAB962952172B0043F668 /* Kingfisher in Frameworks */,
+				392BAB93295216950043F668 /* SkeletonView in Frameworks */,
+				392BAB902952163F0043F668 /* Lottie in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -102,7 +106,6 @@
 				392BAB5D295212560043F668 /* AppDelegate.swift */,
 				392BAB5F295212560043F668 /* SceneDelegate.swift */,
 				392BAB61295212560043F668 /* ViewController.swift */,
-				392BAB63295212560043F668 /* Main.storyboard */,
 				392BAB66295212580043F668 /* Assets.xcassets */,
 				392BAB68295212580043F668 /* LaunchScreen.storyboard */,
 				392BAB6B295212580043F668 /* Info.plist */,
@@ -143,6 +146,11 @@
 			dependencies = (
 			);
 			name = SadaPayHomeAssignment;
+			packageProductDependencies = (
+				392BAB8F2952163F0043F668 /* Lottie */,
+				392BAB92295216950043F668 /* SkeletonView */,
+				392BAB952952172B0043F668 /* Kingfisher */,
+			);
 			productName = SadaPayHomeAssignment;
 			productReference = 392BAB5A295212560043F668 /* SadaPayHomeAssignment.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +223,11 @@
 				Base,
 			);
 			mainGroup = 392BAB51295212560043F668;
+			packageReferences = (
+				392BAB8E2952163F0043F668 /* XCRemoteSwiftPackageReference "lottie-ios" */,
+				392BAB91295216950043F668 /* XCRemoteSwiftPackageReference "SkeletonView" */,
+				392BAB942952172B0043F668 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = 392BAB5B295212560043F668 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -233,7 +246,6 @@
 			files = (
 				392BAB6A295212580043F668 /* LaunchScreen.storyboard in Resources */,
 				392BAB67295212580043F668 /* Assets.xcassets in Resources */,
-				392BAB65295212560043F668 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,14 +309,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		392BAB63295212560043F668 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				392BAB64295212560043F668 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		392BAB68295212580043F668 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -366,7 +370,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -420,7 +424,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -441,9 +445,9 @@
 				INFOPLIST_FILE = SadaPayHomeAssignment/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -451,9 +455,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.junaid.SadaPayHomeAssignment;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -468,9 +475,9 @@
 				INFOPLIST_FILE = SadaPayHomeAssignment/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -478,9 +485,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.junaid.SadaPayHomeAssignment;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -596,6 +606,51 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		392BAB8E2952163F0043F668 /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-ios.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		392BAB91295216950043F668 /* XCRemoteSwiftPackageReference "SkeletonView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Juanpe/SkeletonView.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+		392BAB942952172B0043F668 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		392BAB8F2952163F0043F668 /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 392BAB8E2952163F0043F668 /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			productName = Lottie;
+		};
+		392BAB92295216950043F668 /* SkeletonView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 392BAB91295216950043F668 /* XCRemoteSwiftPackageReference "SkeletonView" */;
+			productName = SkeletonView;
+		};
+		392BAB952952172B0043F668 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 392BAB942952172B0043F668 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 392BAB52295212560043F668 /* Project object */;
 }
