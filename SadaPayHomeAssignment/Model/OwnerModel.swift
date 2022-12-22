@@ -6,7 +6,7 @@
 //
 
 import Foundation
-struct OwnerModel {
+struct OwnerModel: Hashable {
     let login: String
     let avatar_url: String
 }

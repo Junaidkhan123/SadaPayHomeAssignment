@@ -6,9 +6,10 @@
 //
 
 import Foundation
-struct TrendingItemModel {
+struct TrendingItemModel: Hashable {
     let name: String
     let repoDescription: String
     let language: String?
     let starCount: Int
+    let owner: OwnerModel
 }
