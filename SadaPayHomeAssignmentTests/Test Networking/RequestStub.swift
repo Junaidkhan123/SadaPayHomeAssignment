@@ -17,7 +17,7 @@ extension RequestStub: RequestProtocol {
     var path: String {
         switch self {
         case .unAcceptableEndPoint:
-            return "unknow path"
+            return "unknowPath"
         case .acceptableEndPoint:
             return "/v1"
         }
@@ -26,7 +26,7 @@ extension RequestStub: RequestProtocol {
     var baseURL: String {
         switch self {
         case .unAcceptableEndPoint:
-            return "no domain available"
+            return "NoDomainAvailable"
         case .acceptableEndPoint:
             return  "google.com"
         }
