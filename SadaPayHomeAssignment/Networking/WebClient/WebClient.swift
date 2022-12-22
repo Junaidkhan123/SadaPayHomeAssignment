@@ -9,7 +9,7 @@ import Foundation
 protocol URLSessionProtocol {
     func dataTask(
         with request: URLRequest,
-        completionHandler: @escaping @Sendable (Data?, URLResponse?, Error?) -> Void ) -> URLSessionDataTask
+        completionHandler: @escaping @Sendable (Data?, URLResponse?, APIError?) -> Void ) -> URLSessionDataTask
 }
 
 extension URLSession: URLSessionProtocol { }
@@ -20,6 +20,6 @@ protocol WebClient {
                                endPoint: RequestProtocol,
                                responseModel: T.Type,
                                decoder: JSONDecoder,
-                               isFromCache: Bool
-                               completionHandler: @escaping (Result<T, Error>) -> Void)
+                               isFromCache: Bool,
+                               completionHandler: @escaping (Result<T, APIError>) -> Void)
 }
