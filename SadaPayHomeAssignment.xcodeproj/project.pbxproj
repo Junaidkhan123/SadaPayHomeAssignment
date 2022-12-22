@@ -22,6 +22,8 @@
 		3972A0F529546FD300B02E74 /* TrendingItemResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3972A0F429546FD300B02E74 /* TrendingItemResult.swift */; };
 		3972A1BC2954932100B02E74 /* RequestBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3972A1BB2954932100B02E74 /* RequestBuilder.swift */; };
 		3972A1BE2954961500B02E74 /* RequestType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3972A1BD2954961500B02E74 /* RequestType.swift */; };
+		3972A1C229549A0D00B02E74 /* RequestStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3972A1C129549A0D00B02E74 /* RequestStub.swift */; };
+		3972A1C429549B5E00B02E74 /* RequestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3972A1C329549B5E00B02E74 /* RequestTests.swift */; };
 		39B0E4742952543A00006043 /* TrendingItemModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39B0E4732952543A00006043 /* TrendingItemModelTests.swift */; };
 		39B0E4762952572600006043 /* TrendingItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39B0E4752952572600006043 /* TrendingItemModel.swift */; };
 /* End PBXBuildFile section */
@@ -51,6 +53,8 @@
 		3972A0F429546FD300B02E74 /* TrendingItemResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingItemResult.swift; sourceTree = "<group>"; };
 		3972A1BB2954932100B02E74 /* RequestBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestBuilder.swift; sourceTree = "<group>"; };
 		3972A1BD2954961500B02E74 /* RequestType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestType.swift; sourceTree = "<group>"; };
+		3972A1C129549A0D00B02E74 /* RequestStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestStub.swift; sourceTree = "<group>"; };
+		3972A1C329549B5E00B02E74 /* RequestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestTests.swift; sourceTree = "<group>"; };
 		39B0E45B295253E000006043 /* SadaPayHomeAssignmentTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SadaPayHomeAssignmentTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		39B0E4732952543A00006043 /* TrendingItemModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingItemModelTests.swift; sourceTree = "<group>"; };
 		39B0E4752952572600006043 /* TrendingItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingItemModel.swift; sourceTree = "<group>"; };
@@ -165,6 +169,8 @@
 		3972A0F62954718000B02E74 /* Test Networking */ = {
 			isa = PBXGroup;
 			children = (
+				3972A1C129549A0D00B02E74 /* RequestStub.swift */,
+				3972A1C329549B5E00B02E74 /* RequestTests.swift */,
 			);
 			path = "Test Networking";
 			sourceTree = "<group>";
@@ -315,9 +321,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3972A1C429549B5E00B02E74 /* RequestTests.swift in Sources */,
 				3972A0F329546F3200B02E74 /* TrendingItemResultTests.swift in Sources */,
 				39B0E4742952543A00006043 /* TrendingItemModelTests.swift in Sources */,
 				391F9AAC295320350033068F /* OwnerModelTests.swift in Sources */,
+				3972A1C229549A0D00B02E74 /* RequestStub.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
