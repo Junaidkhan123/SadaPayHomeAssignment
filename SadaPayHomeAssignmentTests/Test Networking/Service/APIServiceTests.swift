@@ -6,13 +6,11 @@ final class APIServiceTests: XCTestCase {
     func testWhenValidEndPointProvided_WithActualCall_ThenFetchTopHeadlinesReturnSuccessResult() {
         let expectation = expectation(description: "Success Expectation")
         let sut = APIService()
-        let stub = TrendingItemResult.stub.items
-        let repo = stub.first
         let _ = sut.fetchTrendingRepos() { result in
             expectation.fulfill()
             switch result {
-            case .success(let qoutesArray):
-                XCTAssertTrue(qoutesArray.count > 0)
+            case .success(let trendingRepo):
+                XCTAssertTrue(trendingRepo.count > 0)
             case .failure(let failure):
                 XCTFail("Success should be expected but got a failure \(failure)")
             }
@@ -30,8 +28,8 @@ final class APIServiceTests: XCTestCase {
         let _ = sut.fetchTrendingRepos() { result in
             expectation.fulfill()
             switch result {
-            case .success(let qoutesArray):
-                let expectedResult = qoutesArray.first
+            case .success(let trendingRepo):
+                let expectedResult = trendingRepo.first
                 XCTAssertEqual(expectedResult?.name, repo?.name)
                 XCTAssertEqual(expectedResult?.repoDescription, repo?.repoDescription)
                 XCTAssertEqual(expectedResult?.language, repo?.language)
