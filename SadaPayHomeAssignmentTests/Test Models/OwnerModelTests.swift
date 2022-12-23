@@ -9,9 +9,9 @@ final class OwnerModelTests: XCTestCase {
         let avatar_url = "https://avatars.githubusercontent.com/u/12101536?v=4"
 
         let sut = OwnerModel(login: login,
-                             avatar_url: avatar_url)
+                             avatarUrl: avatar_url)
         XCTAssertEqual(sut.login,login)
-        XCTAssertEqual(sut.avatar_url,avatar_url)
+        XCTAssertEqual(sut.avatarUrl,avatar_url)
     }
 
 }

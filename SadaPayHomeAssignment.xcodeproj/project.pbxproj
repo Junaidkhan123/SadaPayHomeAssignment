@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3913F52129562E2F0098B723 /* OwnerModelStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3913F52029562E2F0098B723 /* OwnerModelStub.swift */; };
+		3913F52329562ED50098B723 /* TrendingItemStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3913F52229562ED50098B723 /* TrendingItemStub.swift */; };
+		3913F52529562F8C0098B723 /* TrendingItemResultStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3913F52429562F8C0098B723 /* TrendingItemResultStub.swift */; };
+		3913F527295631C40098B723 /* APIServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3913F526295631C40098B723 /* APIServiceTests.swift */; };
+		3913F529295635AA0098B723 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3913F528295635AA0098B723 /* APIService.swift */; };
+		3913F52C2956392E0098B723 /* MockAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3913F52B2956392E0098B723 /* MockAPIService.swift */; };
 		391F9AAC295320350033068F /* OwnerModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 391F9AAB295320350033068F /* OwnerModelTests.swift */; };
 		391F9AAE295320EA0033068F /* OwnerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 391F9AAD295320EA0033068F /* OwnerModel.swift */; };
 		392BAB5E295212560043F668 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 392BAB5D295212560043F668 /* AppDelegate.swift */; };
@@ -44,6 +50,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3913F52029562E2F0098B723 /* OwnerModelStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OwnerModelStub.swift; sourceTree = "<group>"; };
+		3913F52229562ED50098B723 /* TrendingItemStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingItemStub.swift; sourceTree = "<group>"; };
+		3913F52429562F8C0098B723 /* TrendingItemResultStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingItemResultStub.swift; sourceTree = "<group>"; };
+		3913F526295631C40098B723 /* APIServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIServiceTests.swift; sourceTree = "<group>"; };
+		3913F528295635AA0098B723 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		3913F52B2956392E0098B723 /* MockAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAPIService.swift; sourceTree = "<group>"; };
 		391F9AAB295320350033068F /* OwnerModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OwnerModelTests.swift; sourceTree = "<group>"; };
 		391F9AAD295320EA0033068F /* OwnerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OwnerModel.swift; sourceTree = "<group>"; };
 		392BAB5A295212560043F668 /* SadaPayHomeAssignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SadaPayHomeAssignment.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -91,6 +103,41 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3913F51D29562BDF0098B723 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				3913F52A295638EC0098B723 /* Mock */,
+				3913F526295631C40098B723 /* APIServiceTests.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		3913F51E29562BEE0098B723 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				3913F528295635AA0098B723 /* APIService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		3913F51F29562DEE0098B723 /* Model Stub */ = {
+			isa = PBXGroup;
+			children = (
+				3913F52029562E2F0098B723 /* OwnerModelStub.swift */,
+				3913F52229562ED50098B723 /* TrendingItemStub.swift */,
+				3913F52429562F8C0098B723 /* TrendingItemResultStub.swift */,
+			);
+			path = "Model Stub";
+			sourceTree = "<group>";
+		};
+		3913F52A295638EC0098B723 /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				3913F52B2956392E0098B723 /* MockAPIService.swift */,
+			);
+			path = Mock;
+			sourceTree = "<group>";
+		};
 		392BAB51295212560043F668 = {
 			isa = PBXGroup;
 			children = (
@@ -154,6 +201,7 @@
 			children = (
 				3972A1CC2954A87700B02E74 /* WebClient */,
 				3972A1CB2954A86A00B02E74 /* Requests */,
+				3913F51E29562BEE0098B723 /* Service */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -182,6 +230,7 @@
 				3972A1D82954E48600B02E74 /* WebClient */,
 				3972A1CD2954A9B600B02E74 /* Stub */,
 				3972A1CE2954A9C100B02E74 /* Requests */,
+				3913F51D29562BDF0098B723 /* Service */,
 			);
 			path = "Test Networking";
 			sourceTree = "<group>";
@@ -208,6 +257,7 @@
 		3972A1CD2954A9B600B02E74 /* Stub */ = {
 			isa = PBXGroup;
 			children = (
+				3913F51F29562DEE0098B723 /* Model Stub */,
 				3972A1C129549A0D00B02E74 /* RequestStub.swift */,
 			);
 			path = Stub;
@@ -371,6 +421,7 @@
 				3972A0F529546FD300B02E74 /* TrendingItemResult.swift in Sources */,
 				392BAB60295212560043F668 /* SceneDelegate.swift in Sources */,
 				3972A1BE2954961500B02E74 /* RequestType.swift in Sources */,
+				3913F529295635AA0098B723 /* APIService.swift in Sources */,
 				3972A1DC2954E4F300B02E74 /* APIError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -379,11 +430,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3913F52C2956392E0098B723 /* MockAPIService.swift in Sources */,
 				3972A1C429549B5E00B02E74 /* RequestTests.swift in Sources */,
 				3972A1DA2954E49F00B02E74 /* WebClientTests.swift in Sources */,
 				3972A0F329546F3200B02E74 /* TrendingItemResultTests.swift in Sources */,
+				3913F52329562ED50098B723 /* TrendingItemStub.swift in Sources */,
+				3913F52129562E2F0098B723 /* OwnerModelStub.swift in Sources */,
 				39B0E4742952543A00006043 /* TrendingItemModelTests.swift in Sources */,
+				3913F52529562F8C0098B723 /* TrendingItemResultStub.swift in Sources */,
 				391F9AAC295320350033068F /* OwnerModelTests.swift in Sources */,
+				3913F527295631C40098B723 /* APIServiceTests.swift in Sources */,
 				3972A1C82954A44F00B02E74 /* GithubRequestTests.swift in Sources */,
 				3972A1C229549A0D00B02E74 /* RequestStub.swift in Sources */,
 			);

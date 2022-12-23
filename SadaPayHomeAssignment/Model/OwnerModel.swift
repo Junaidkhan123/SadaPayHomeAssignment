@@ -6,7 +6,12 @@
 //
 
 import Foundation
-struct OwnerModel: Hashable {
+struct OwnerModel: Hashable, Decodable {
     let login: String
-    let avatar_url: String
+    let avatarUrl: String
+
+    enum CodingKeys: String, CodingKey {
+        case login
+        case avatarUrl = "avatar_url"
+    }
 }

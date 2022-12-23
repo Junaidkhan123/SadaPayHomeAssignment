@@ -17,6 +17,5 @@ final class GithubRequestTests: XCTestCase {
 
         XCTAssertEqual(request.httpMethod, "GET")
         XCTAssertEqual(request.allHTTPHeaderFields, [:])
-        //        expect(components.queryItems).to(equal([URLQueryItem(name: "q", value: "language=+sort:stars")]))
     }
 }

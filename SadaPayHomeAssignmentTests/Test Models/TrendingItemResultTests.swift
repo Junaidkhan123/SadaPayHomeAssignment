@@ -13,10 +13,10 @@ final class TrendingItemResultTests: XCTestCase {
                   owner: TrendingItemModelStrings.owner)
         ]
 
-        let sut = TrendingItemResult(item: trendingItem)
-        let item = sut.item.first
+        let sut = TrendingItemResult(items: trendingItem)
+        let item = sut.items.first
 
-        XCTAssertEqual(sut.item.count, 1)
+        XCTAssertEqual(sut.items.count, 1)
         XCTAssertEqual(item?.name, TrendingItemModelStrings.name)
         XCTAssertEqual(item?.repoDescription, TrendingItemModelStrings.repoDescription)
         XCTAssertEqual(item?.language, TrendingItemModelStrings.language)

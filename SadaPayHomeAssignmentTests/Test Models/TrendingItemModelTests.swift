@@ -7,7 +7,7 @@ enum TrendingItemModelStrings {
     static var language = "C#"
     static var starCount = 514
     static var owner = OwnerModel(login: "apple",
-                                       avatar_url: "https://avatars.githubusercontent.com/u/12101536?v=4")
+                                  avatarUrl: "https://avatars.githubusercontent.com/u/12101536?v=4")
 }
 
 final class TrendingItemModelTests: XCTestCase {

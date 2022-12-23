@@ -6,6 +6,7 @@
 //
 
 import Foundation
-struct TrendingItemResult {
-    let item: [TrendingItemModel]
+struct TrendingItemResult: Decodable {
+    let items: [TrendingItemModel]
+    
 }
