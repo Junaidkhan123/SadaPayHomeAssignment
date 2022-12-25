@@ -17,7 +17,6 @@
 		391F9AAE295320EA0033068F /* OwnerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 391F9AAD295320EA0033068F /* OwnerModel.swift */; };
 		392BAB5E295212560043F668 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 392BAB5D295212560043F668 /* AppDelegate.swift */; };
 		392BAB60295212560043F668 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 392BAB5F295212560043F668 /* SceneDelegate.swift */; };
-		392BAB62295212560043F668 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 392BAB61295212560043F668 /* ViewController.swift */; };
 		392BAB67295212580043F668 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 392BAB66295212580043F668 /* Assets.xcassets */; };
 		392BAB6A295212580043F668 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 392BAB68295212580043F668 /* LaunchScreen.storyboard */; };
 		392BAB902952163F0043F668 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 392BAB8F2952163F0043F668 /* Lottie */; };
@@ -40,6 +39,9 @@
 		3976A055295864BC00F2C7AD /* TrendingRepoCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3976A054295864BC00F2C7AD /* TrendingRepoCellViewModel.swift */; };
 		3976A0582958660900F2C7AD /* MockTrendingRepoCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3976A0572958660900F2C7AD /* MockTrendingRepoCellViewModel.swift */; };
 		3976A05A29586ECD00F2C7AD /* TrendingCellViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3976A05929586ECD00F2C7AD /* TrendingCellViewModelTests.swift */; };
+		3976A05D29587A0700F2C7AD /* RepositoriesViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3976A05C29587A0700F2C7AD /* RepositoriesViewControllerTests.swift */; };
+		3976A06029587B0100F2C7AD /* RepositoriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3976A05E29587B0100F2C7AD /* RepositoriesViewController.swift */; };
+		3976A06129587B0100F2C7AD /* RepositoriesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3976A05F29587B0100F2C7AD /* RepositoriesViewController.xib */; };
 		39B0E4742952543A00006043 /* TrendingItemModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39B0E4732952543A00006043 /* TrendingItemModelTests.swift */; };
 		39B0E4762952572600006043 /* TrendingItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39B0E4752952572600006043 /* TrendingItemModel.swift */; };
 /* End PBXBuildFile section */
@@ -66,7 +68,6 @@
 		392BAB5A295212560043F668 /* SadaPayHomeAssignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SadaPayHomeAssignment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		392BAB5D295212560043F668 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		392BAB5F295212560043F668 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		392BAB61295212560043F668 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		392BAB66295212580043F668 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		392BAB69295212580043F668 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		392BAB6B295212580043F668 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -87,6 +88,9 @@
 		3976A054295864BC00F2C7AD /* TrendingRepoCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingRepoCellViewModel.swift; sourceTree = "<group>"; };
 		3976A0572958660900F2C7AD /* MockTrendingRepoCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockTrendingRepoCellViewModel.swift; sourceTree = "<group>"; };
 		3976A05929586ECD00F2C7AD /* TrendingCellViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingCellViewModelTests.swift; sourceTree = "<group>"; };
+		3976A05C29587A0700F2C7AD /* RepositoriesViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoriesViewControllerTests.swift; sourceTree = "<group>"; };
+		3976A05E29587B0100F2C7AD /* RepositoriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoriesViewController.swift; sourceTree = "<group>"; };
+		3976A05F29587B0100F2C7AD /* RepositoriesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RepositoriesViewController.xib; sourceTree = "<group>"; };
 		39B0E45B295253E000006043 /* SadaPayHomeAssignmentTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SadaPayHomeAssignmentTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		39B0E4732952543A00006043 /* TrendingItemModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingItemModelTests.swift; sourceTree = "<group>"; };
 		39B0E4752952572600006043 /* TrendingItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingItemModel.swift; sourceTree = "<group>"; };
@@ -202,7 +206,8 @@
 			isa = PBXGroup;
 			children = (
 				3976A05129575A6300F2C7AD /* ViewModel */,
-				392BAB61295212560043F668 /* ViewController.swift */,
+				3976A05E29587B0100F2C7AD /* RepositoriesViewController.swift */,
+				3976A05F29587B0100F2C7AD /* RepositoriesViewController.xib */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -318,9 +323,18 @@
 			path = Stub;
 			sourceTree = "<group>";
 		};
+		3976A05B295879E200F2C7AD /* Test ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				3976A05C29587A0700F2C7AD /* RepositoriesViewControllerTests.swift */,
+			);
+			path = "Test ViewControllers";
+			sourceTree = "<group>";
+		};
 		39B0E45C295253E000006043 /* SadaPayHomeAssignmentTests */ = {
 			isa = PBXGroup;
 			children = (
+				3976A05B295879E200F2C7AD /* Test ViewControllers */,
 				3976A04E295759B400F2C7AD /* Test ViewModel */,
 				3972A0F62954718000B02E74 /* Test Networking */,
 				39B0E47729525A1C00006043 /* Test Models */,
@@ -432,6 +446,7 @@
 			files = (
 				392BABA3295222C40043F668 /* networkError_lottie.json in Resources */,
 				392BAB6A295212580043F668 /* LaunchScreen.storyboard in Resources */,
+				3976A06129587B0100F2C7AD /* RepositoriesViewController.xib in Resources */,
 				392BAB67295212580043F668 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -451,7 +466,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				3972A1BC2954932100B02E74 /* RequestBuilder.swift in Sources */,
-				392BAB62295212560043F668 /* ViewController.swift in Sources */,
 				391F9AAE295320EA0033068F /* OwnerModel.swift in Sources */,
 				3976A055295864BC00F2C7AD /* TrendingRepoCellViewModel.swift in Sources */,
 				3972A1D02954AE0F00B02E74 /* WebClient.swift in Sources */,
@@ -463,6 +477,7 @@
 				392BAB60295212560043F668 /* SceneDelegate.swift in Sources */,
 				3972A1BE2954961500B02E74 /* RequestType.swift in Sources */,
 				3913F529295635AA0098B723 /* APIService.swift in Sources */,
+				3976A06029587B0100F2C7AD /* RepositoriesViewController.swift in Sources */,
 				3972A1DC2954E4F300B02E74 /* APIError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -481,6 +496,7 @@
 				3913F52129562E2F0098B723 /* OwnerModelStub.swift in Sources */,
 				39B0E4742952543A00006043 /* TrendingItemModelTests.swift in Sources */,
 				3913F52529562F8C0098B723 /* TrendingItemResultStub.swift in Sources */,
+				3976A05D29587A0700F2C7AD /* RepositoriesViewControllerTests.swift in Sources */,
 				391F9AAC295320350033068F /* OwnerModelTests.swift in Sources */,
 				3913F527295631C40098B723 /* APIServiceTests.swift in Sources */,
 				3972A1C82954A44F00B02E74 /* GithubRequestTests.swift in Sources */,
