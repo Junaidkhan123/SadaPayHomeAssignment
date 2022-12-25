@@ -12,7 +12,7 @@ protocol TrendingRepoCellViewModelType {
     var ownerLogin: String { get }
     var trendingRepositoryDescription: String { get }
     var language: String { get }
-    var stars: Int { get }
+    var stars: String { get }
     var avatarUrl: URL { get }
 }
 
@@ -22,7 +22,7 @@ struct TrendingRepoCellViewModel: TrendingRepoCellViewModelType {
     var ownerLogin: String
     var trendingRepositoryDescription: String
     var language: String
-    var stars: Int
+    var stars: String
     var avatarUrl: URL
     
 }

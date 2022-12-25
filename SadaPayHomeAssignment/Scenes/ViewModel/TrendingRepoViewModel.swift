@@ -11,6 +11,7 @@ protocol TrendingRepoViewModelType {
     var title : String { get }
     var trendingRepo: [TrendingItemModel] { get }
     func fetchTrendingRepositories(completionHanlder: @escaping ([TrendingItemModel]?) -> Void)
+    func getTrendingCellViewModel(at index: Int) -> TrendingRepoCellViewModelType
 }
 
 final class TrendingRepoViewModel: TrendingRepoViewModelType {
@@ -44,7 +45,7 @@ final class TrendingRepoViewModel: TrendingRepoViewModelType {
                                          ownerLogin: trendingRepo.owner.login,
                                          trendingRepositoryDescription: trendingRepo.repoDescription,
                                          language: trendingRepo.language ?? "",
-                                         stars: trendingRepo.starCount,
+                                         stars: "⭐️ \(trendingRepo.starCount)",
                                          avatarUrl: avatarURL)
     }
 }

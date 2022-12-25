@@ -8,12 +8,17 @@
 import Foundation
 @testable import SadaPayHomeAssignment
 final class MockSuccessTrendingViewModel: TrendingRepoViewModelType {
+    
     var title: String { return "Trending"}
-
+    
     var trendingRepo: [TrendingItemModel] = []
-
+    
     func fetchTrendingRepositories(completionHanlder: @escaping ([TrendingItemModel]?) -> Void) {
         trendingRepo = TrendingItemResult.stub.items
         completionHanlder(TrendingItemResult.stub.items)
+    }
+    
+    func getTrendingCellViewModel(at index: Int) -> TrendingRepoCellViewModelType {
+        return MockTrendingRepoCellViewModel()
     }
 }

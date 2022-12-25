@@ -39,8 +39,10 @@ class RepositoriesViewController: UIViewController {
 
     private func configureDataSource() -> UITableViewDiffableDataSource<Section, TrendingItemModel> {
 
-        let dataSource = UITableViewDiffableDataSource<Section, TrendingItemModel>(tableView: tableView, cellProvider: { (tableView, indexPath, trendingItemModel) -> UITableViewCell? in
+        let dataSource = UITableViewDiffableDataSource<Section, TrendingItemModel>(tableView: tableView, cellProvider: { [weak self]  (tableView, indexPath, trendingItemModel) -> UITableViewCell? in
             let cell = tableView.dequeueReusableCell(withIdentifier: RepoTableViewCell.identifier, for: indexPath) as! RepoTableViewCell
+            let viewModel = self?.viewModel.getTrendingCellViewModel(at: indexPath.row)
+            cell.configCell(with: viewModel!)
             return cell
         })
 

@@ -28,16 +28,24 @@ final class RepositoriesViewControllerTests: XCTestCase {
         XCTAssertNotNil(cell)
     }
 
-    func test_WhenTableViewIsConfigured_ThenRepoTableViewCellReturns() throws {
+    func test_WhenTableViewIsConfigured_ThenRepoTableViewCellReturnsCorrectdata() throws {
         let tableView = try XCTUnwrap(sut.tableView)
-        let indexPath = IndexPath(row: 0, section: 0)
+
         let cell = try XCTUnwrap(
-            tableView.dataSource?
-                .tableView(tableView,
-                           cellForRowAt: indexPath)
-            as? RepoTableViewCell
+            tableView.cell(at: 0)
         )
+
+        let stub = MockTrendingRepoCellViewModel()
         XCTAssertNotNil(cell)
+        XCTAssertEqual(tableView.ownerName(at: 0), stub.ownerLogin)
+        XCTAssertEqual(tableView.repositoryName(at: 0), stub.name)
+        XCTAssertEqual(tableView.repoDescription(at: 0), stub.trendingRepositoryDescription)
+        XCTAssertEqual(tableView.language(at: 0), stub.language)
+        XCTAssertEqual(tableView.starCount(at: 0), "\(stub.stars)")
+        XCTAssertTrue(tableView.isDescriptionLabelHidden(at: 0))
+        XCTAssertTrue(tableView.isStackViewHidden(at: 0))
+
+
     }
 
     func test_WhenDataIsFetchedSuccessFully_ThenReturnsCorrectNumberOfRows() throws {
@@ -65,4 +73,39 @@ final class RepositoriesViewControllerTests: XCTestCase {
         return sut
     }
 
+}
+
+private extension UITableView {
+
+    func cell(at row: Int) -> RepoTableViewCell {
+        return dataSource?.tableView(self, cellForRowAt: IndexPath(row: row, section: 0)) as! RepoTableViewCell
+    }
+
+    func ownerName(at row: Int) -> String? {
+        cell(at:row).ownerNameLabel?.text
+    }
+
+    func repositoryName(at row: Int) -> String? {
+        cell(at:row).repositoryNameLabel?.text
+    }
+
+    func repoDescription(at row: Int) -> String? {
+        cell(at:row).repoDescriptionLabel?.text
+    }
+
+    func language(at row: Int) -> String? {
+        cell(at:row).languageLabel?.text
+    }
+
+    func starCount(at row: Int) -> String? {
+        cell(at:row).starsCountLabel?.text
+    }
+
+    func isDescriptionLabelHidden(at row: Int) -> Bool {
+        cell(at:row).repoDescriptionLabel.isHidden
+    }
+
+    func isStackViewHidden(at row: Int) -> Bool {
+        cell(at:row).stackView.isHidden
+    }
 }
