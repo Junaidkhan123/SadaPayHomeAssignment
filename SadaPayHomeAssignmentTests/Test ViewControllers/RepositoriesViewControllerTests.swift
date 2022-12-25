@@ -8,4 +8,11 @@ final class RepositoriesViewControllerTests: XCTestCase {
         sut.loadViewIfNeeded()
         XCTAssertEqual(sut.title, "Trending")
     }
+
+    // MARK: - TableView Tests
+   func test_WhenControllerLoaded_ThenControllerHasTableView() {
+       let sut = RepositoriesViewController()
+       sut.loadViewIfNeeded()
+       XCTAssertNotNil(sut.tableView)
+   }
 }
