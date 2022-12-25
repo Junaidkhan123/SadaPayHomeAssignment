@@ -13,6 +13,7 @@ class RepositoriesViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = viewModel.title
+        setupTableView()
     }
 
     init(viewModel: TrendingRepoViewModelType = TrendingRepoViewModel()) {
@@ -22,6 +23,10 @@ class RepositoriesViewController: UIViewController {
 
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
+    }
+
+    private func setupTableView() {
+        tableView.register(UINib(nibName: "RepoTableViewCell", bundle: nil), forCellReuseIdentifier: RepoTableViewCell.identifier)
     }
 
 }
