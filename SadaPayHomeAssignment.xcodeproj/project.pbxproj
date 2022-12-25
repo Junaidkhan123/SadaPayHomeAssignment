@@ -44,6 +44,8 @@
 		3976A06129587B0100F2C7AD /* RepositoriesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3976A05F29587B0100F2C7AD /* RepositoriesViewController.xib */; };
 		3976A06429587DBC00F2C7AD /* RepoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3976A06229587DBC00F2C7AD /* RepoTableViewCell.swift */; };
 		3976A06529587DBC00F2C7AD /* RepoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3976A06329587DBC00F2C7AD /* RepoTableViewCell.xib */; };
+		3976A06729589D8B00F2C7AD /* MockSuccessTrendingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3976A06629589D8A00F2C7AD /* MockSuccessTrendingViewModel.swift */; };
+		3976A06929589DB800F2C7AD /* MockFailureTrendingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3976A06829589DB800F2C7AD /* MockFailureTrendingViewModel.swift */; };
 		39B0E4742952543A00006043 /* TrendingItemModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39B0E4732952543A00006043 /* TrendingItemModelTests.swift */; };
 		39B0E4762952572600006043 /* TrendingItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39B0E4752952572600006043 /* TrendingItemModel.swift */; };
 /* End PBXBuildFile section */
@@ -95,6 +97,8 @@
 		3976A05F29587B0100F2C7AD /* RepositoriesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RepositoriesViewController.xib; sourceTree = "<group>"; };
 		3976A06229587DBC00F2C7AD /* RepoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoTableViewCell.swift; sourceTree = "<group>"; };
 		3976A06329587DBC00F2C7AD /* RepoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RepoTableViewCell.xib; sourceTree = "<group>"; };
+		3976A06629589D8A00F2C7AD /* MockSuccessTrendingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockSuccessTrendingViewModel.swift; sourceTree = "<group>"; };
+		3976A06829589DB800F2C7AD /* MockFailureTrendingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockFailureTrendingViewModel.swift; sourceTree = "<group>"; };
 		39B0E45B295253E000006043 /* SadaPayHomeAssignmentTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SadaPayHomeAssignmentTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		39B0E4732952543A00006043 /* TrendingItemModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingItemModelTests.swift; sourceTree = "<group>"; };
 		39B0E4752952572600006043 /* TrendingItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingItemModel.swift; sourceTree = "<group>"; };
@@ -325,6 +329,8 @@
 			isa = PBXGroup;
 			children = (
 				3976A0572958660900F2C7AD /* MockTrendingRepoCellViewModel.swift */,
+				3976A06629589D8A00F2C7AD /* MockSuccessTrendingViewModel.swift */,
+				3976A06829589DB800F2C7AD /* MockFailureTrendingViewModel.swift */,
 			);
 			path = Stub;
 			sourceTree = "<group>";
@@ -502,11 +508,13 @@
 				3976A0582958660900F2C7AD /* MockTrendingRepoCellViewModel.swift in Sources */,
 				3976A050295759C800F2C7AD /* TrendingRepoViewModelTests.swift in Sources */,
 				3913F52129562E2F0098B723 /* OwnerModelStub.swift in Sources */,
+				3976A06929589DB800F2C7AD /* MockFailureTrendingViewModel.swift in Sources */,
 				39B0E4742952543A00006043 /* TrendingItemModelTests.swift in Sources */,
 				3913F52529562F8C0098B723 /* TrendingItemResultStub.swift in Sources */,
 				3976A05D29587A0700F2C7AD /* RepositoriesViewControllerTests.swift in Sources */,
 				391F9AAC295320350033068F /* OwnerModelTests.swift in Sources */,
 				3913F527295631C40098B723 /* APIServiceTests.swift in Sources */,
+				3976A06729589D8B00F2C7AD /* MockSuccessTrendingViewModel.swift in Sources */,
 				3972A1C82954A44F00B02E74 /* GithubRequestTests.swift in Sources */,
 				3976A05A29586ECD00F2C7AD /* TrendingCellViewModelTests.swift in Sources */,
 				3972A1C229549A0D00B02E74 /* RequestStub.swift in Sources */,

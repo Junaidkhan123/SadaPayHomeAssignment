@@ -66,23 +66,3 @@ final class RepositoriesViewControllerTests: XCTestCase {
     }
 
 }
-
-class MockSuccessTrendingViewModel: TrendingRepoViewModelType {
-    var title: String { return "Trending"}
-
-    var trendingRepo: [TrendingItemModel] = []
-
-    func fetchTrendingRepositories(completionHanlder: @escaping ([TrendingItemModel]?) -> Void) {
-        trendingRepo = TrendingItemResult.stub.items
-        completionHanlder(TrendingItemResult.stub.items)
-    }
-}
-class MockFailureTrendingViewModel: TrendingRepoViewModelType {
-    var title: String { return "Trending"}
-
-    var trendingRepo: [SadaPayHomeAssignment.TrendingItemModel] = []
-
-    func fetchTrendingRepositories(completionHanlder: @escaping ([TrendingItemModel]?) -> Void) {
-        completionHanlder(nil)
-    }
-}
