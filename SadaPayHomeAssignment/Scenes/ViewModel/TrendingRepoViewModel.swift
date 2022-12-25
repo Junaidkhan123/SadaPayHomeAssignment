@@ -34,4 +34,17 @@ final class TrendingRepoViewModel: TrendingRepoViewModelType {
             }
         }
     }
+
+    func getTrendingCellViewModel(at index: Int) -> TrendingRepoCellViewModelType {
+        
+        let trendingRepo = trendingRepo[index]
+        let avatarURL = URL(string: trendingRepo.owner.avatarUrl)!
+        return TrendingRepoCellViewModel(isExpand: true,
+                                         name: trendingRepo.name,
+                                         ownerLogin: trendingRepo.owner.login,
+                                         trendingRepositoryDescription: trendingRepo.repoDescription,
+                                         language: trendingRepo.language ?? "",
+                                         stars: trendingRepo.starCount,
+                                         avatarUrl: avatarURL)
+    }
 }

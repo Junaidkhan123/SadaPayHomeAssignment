@@ -37,6 +37,9 @@
 		3972A1DC2954E4F300B02E74 /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3972A1DB2954E4F300B02E74 /* APIError.swift */; };
 		3976A050295759C800F2C7AD /* TrendingRepoViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3976A04F295759C800F2C7AD /* TrendingRepoViewModelTests.swift */; };
 		3976A05329575A7500F2C7AD /* TrendingRepoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3976A05229575A7500F2C7AD /* TrendingRepoViewModel.swift */; };
+		3976A055295864BC00F2C7AD /* TrendingRepoCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3976A054295864BC00F2C7AD /* TrendingRepoCellViewModel.swift */; };
+		3976A0582958660900F2C7AD /* MockTrendingRepoCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3976A0572958660900F2C7AD /* MockTrendingRepoCellViewModel.swift */; };
+		3976A05A29586ECD00F2C7AD /* TrendingCellViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3976A05929586ECD00F2C7AD /* TrendingCellViewModelTests.swift */; };
 		39B0E4742952543A00006043 /* TrendingItemModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39B0E4732952543A00006043 /* TrendingItemModelTests.swift */; };
 		39B0E4762952572600006043 /* TrendingItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39B0E4752952572600006043 /* TrendingItemModel.swift */; };
 /* End PBXBuildFile section */
@@ -81,6 +84,9 @@
 		3972A1DB2954E4F300B02E74 /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
 		3976A04F295759C800F2C7AD /* TrendingRepoViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingRepoViewModelTests.swift; sourceTree = "<group>"; };
 		3976A05229575A7500F2C7AD /* TrendingRepoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingRepoViewModel.swift; sourceTree = "<group>"; };
+		3976A054295864BC00F2C7AD /* TrendingRepoCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingRepoCellViewModel.swift; sourceTree = "<group>"; };
+		3976A0572958660900F2C7AD /* MockTrendingRepoCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockTrendingRepoCellViewModel.swift; sourceTree = "<group>"; };
+		3976A05929586ECD00F2C7AD /* TrendingCellViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingCellViewModelTests.swift; sourceTree = "<group>"; };
 		39B0E45B295253E000006043 /* SadaPayHomeAssignmentTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SadaPayHomeAssignmentTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		39B0E4732952543A00006043 /* TrendingItemModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingItemModelTests.swift; sourceTree = "<group>"; };
 		39B0E4752952572600006043 /* TrendingItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingItemModel.swift; sourceTree = "<group>"; };
@@ -288,7 +294,9 @@
 		3976A04E295759B400F2C7AD /* Test ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				3976A056295865E900F2C7AD /* Stub */,
 				3976A04F295759C800F2C7AD /* TrendingRepoViewModelTests.swift */,
+				3976A05929586ECD00F2C7AD /* TrendingCellViewModelTests.swift */,
 			);
 			path = "Test ViewModel";
 			sourceTree = "<group>";
@@ -297,8 +305,17 @@
 			isa = PBXGroup;
 			children = (
 				3976A05229575A7500F2C7AD /* TrendingRepoViewModel.swift */,
+				3976A054295864BC00F2C7AD /* TrendingRepoCellViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		3976A056295865E900F2C7AD /* Stub */ = {
+			isa = PBXGroup;
+			children = (
+				3976A0572958660900F2C7AD /* MockTrendingRepoCellViewModel.swift */,
+			);
+			path = Stub;
 			sourceTree = "<group>";
 		};
 		39B0E45C295253E000006043 /* SadaPayHomeAssignmentTests */ = {
@@ -436,6 +453,7 @@
 				3972A1BC2954932100B02E74 /* RequestBuilder.swift in Sources */,
 				392BAB62295212560043F668 /* ViewController.swift in Sources */,
 				391F9AAE295320EA0033068F /* OwnerModel.swift in Sources */,
+				3976A055295864BC00F2C7AD /* TrendingRepoCellViewModel.swift in Sources */,
 				3972A1D02954AE0F00B02E74 /* WebClient.swift in Sources */,
 				3972A1CA2954A46C00B02E74 /* GithubRequest.swift in Sources */,
 				39B0E4762952572600006043 /* TrendingItemModel.swift in Sources */,
@@ -458,6 +476,7 @@
 				3972A1DA2954E49F00B02E74 /* WebClientTests.swift in Sources */,
 				3972A0F329546F3200B02E74 /* TrendingItemResultTests.swift in Sources */,
 				3913F52329562ED50098B723 /* TrendingItemStub.swift in Sources */,
+				3976A0582958660900F2C7AD /* MockTrendingRepoCellViewModel.swift in Sources */,
 				3976A050295759C800F2C7AD /* TrendingRepoViewModelTests.swift in Sources */,
 				3913F52129562E2F0098B723 /* OwnerModelStub.swift in Sources */,
 				39B0E4742952543A00006043 /* TrendingItemModelTests.swift in Sources */,
@@ -465,6 +484,7 @@
 				391F9AAC295320350033068F /* OwnerModelTests.swift in Sources */,
 				3913F527295631C40098B723 /* APIServiceTests.swift in Sources */,
 				3972A1C82954A44F00B02E74 /* GithubRequestTests.swift in Sources */,
+				3976A05A29586ECD00F2C7AD /* TrendingCellViewModelTests.swift in Sources */,
 				3972A1C229549A0D00B02E74 /* RequestStub.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

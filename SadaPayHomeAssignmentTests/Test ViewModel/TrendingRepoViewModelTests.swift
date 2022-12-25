@@ -54,4 +54,23 @@ final class TrendingRepoViewModelTests: XCTestCase {
         waitForExpectations(timeout: 1.0)
     }
 
+    func test_getTrendingCellViewModelInvokedWithIndex_ThenItReturnsTrendingRepoCellViewModel() {
+
+        sut.fetchTrendingRepositories { _ in  }
+
+        let outputViewMCellViewModel = sut.getTrendingCellViewModel(at: 0)
+
+        let mockCellViewModel: MockTrendingRepoCellViewModel = .init()
+
+        XCTAssertEqual(outputViewMCellViewModel.name, mockCellViewModel.name)
+        XCTAssertEqual(outputViewMCellViewModel.trendingRepositoryDescription, mockCellViewModel.trendingRepositoryDescription)
+        XCTAssertEqual(outputViewMCellViewModel.stars, mockCellViewModel.stars)
+        XCTAssertEqual(outputViewMCellViewModel.language, mockCellViewModel.language)
+        XCTAssertEqual(outputViewMCellViewModel.isExpand, mockCellViewModel.isExpand)
+
+        XCTAssertEqual(outputViewMCellViewModel.ownerLogin, mockCellViewModel.ownerLogin)
+        XCTAssertEqual(outputViewMCellViewModel.avatarUrl, mockCellViewModel.avatarUrl)
+
+    }
+
 }
