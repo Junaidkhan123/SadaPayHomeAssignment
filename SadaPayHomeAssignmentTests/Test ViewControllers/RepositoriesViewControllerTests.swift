@@ -85,7 +85,6 @@ final class RepositoriesViewControllerTests: XCTestCase {
         sut.loadViewIfNeeded()
         return sut
     }
-
 }
 
 private extension UITableView {

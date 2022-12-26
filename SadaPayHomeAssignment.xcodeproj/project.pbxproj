@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		390A9955295A043C00754FF5 /* TableViewSkeletonDiffableDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 390A9954295A043C00754FF5 /* TableViewSkeletonDiffableDataSource.swift */; };
 		3913F52129562E2F0098B723 /* OwnerModelStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3913F52029562E2F0098B723 /* OwnerModelStub.swift */; };
 		3913F52329562ED50098B723 /* TrendingItemStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3913F52229562ED50098B723 /* TrendingItemStub.swift */; };
 		3913F52529562F8C0098B723 /* TrendingItemResultStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3913F52429562F8C0098B723 /* TrendingItemResultStub.swift */; };
@@ -61,6 +62,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		390A9954295A043C00754FF5 /* TableViewSkeletonDiffableDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewSkeletonDiffableDataSource.swift; sourceTree = "<group>"; };
 		3913F52029562E2F0098B723 /* OwnerModelStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OwnerModelStub.swift; sourceTree = "<group>"; };
 		3913F52229562ED50098B723 /* TrendingItemStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingItemStub.swift; sourceTree = "<group>"; };
 		3913F52429562F8C0098B723 /* TrendingItemResultStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingItemResultStub.swift; sourceTree = "<group>"; };
@@ -125,6 +127,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		390A9953295A042000754FF5 /* SkeletonDataSource */ = {
+			isa = PBXGroup;
+			children = (
+				390A9954295A043C00754FF5 /* TableViewSkeletonDiffableDataSource.swift */,
+			);
+			path = SkeletonDataSource;
+			sourceTree = "<group>";
+		};
 		3913F51D29562BDF0098B723 /* Service */ = {
 			isa = PBXGroup;
 			children = (
@@ -213,6 +223,7 @@
 		392BAB9A295218BD0043F668 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				390A9953295A042000754FF5 /* SkeletonDataSource */,
 				3976A05129575A6300F2C7AD /* ViewModel */,
 				3976A05E29587B0100F2C7AD /* RepositoriesViewController.swift */,
 				3976A05F29587B0100F2C7AD /* RepositoriesViewController.xib */,
@@ -482,6 +493,7 @@
 				391F9AAE295320EA0033068F /* OwnerModel.swift in Sources */,
 				3976A055295864BC00F2C7AD /* TrendingRepoCellViewModel.swift in Sources */,
 				3972A1D02954AE0F00B02E74 /* WebClient.swift in Sources */,
+				390A9955295A043C00754FF5 /* TableViewSkeletonDiffableDataSource.swift in Sources */,
 				3972A1CA2954A46C00B02E74 /* GithubRequest.swift in Sources */,
 				39B0E4762952572600006043 /* TrendingItemModel.swift in Sources */,
 				3976A05329575A7500F2C7AD /* TrendingRepoViewModel.swift in Sources */,
