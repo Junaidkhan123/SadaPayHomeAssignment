@@ -11,6 +11,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RepositoriesViewController" customModule="SadaPayHomeAssignment" customModuleProvider="target">
             <connections>
+                <outlet property="errorView" destination="9TH-pY-nN6" id="D9T-E2-UMP"/>
                 <outlet property="tableView" destination="Rss-gk-hez" id="KlC-1U-nwd"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -27,6 +28,63 @@
                         <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
                     </userDefinedRuntimeAttributes>
                 </tableView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9TH-pY-nN6" customClass="ErrorView" customModule="SadaPayHomeAssignment" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dmj-3a-idN" customClass="LottieAnimationView" customModule="Lottie">
+                            <rect key="frame" x="16" y="260" width="361" height="212"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="dmj-3a-idN" secondAttribute="height" multiplier="361:212" id="43M-Wn-fj9"/>
+                            </constraints>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Something went wrong." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="691-Mj-zHu">
+                            <rect key="frame" x="16" y="488" width="361" height="22"/>
+                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="An alien is probably blocking your signal." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="szC-Q5-JdQ">
+                            <rect key="frame" x="16" y="518" width="361" height="22"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                            <color key="textColor" systemColor="secondaryLabelColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PJK-YF-ybE">
+                            <rect key="frame" x="36" y="742" width="321" height="50"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="TIl-vr-uxJ"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="GeezaPro-Bold" family="Geeza Pro" pointSize="18"/>
+                            <state key="normal" title="RETRY">
+                                <color key="titleColor" systemColor="systemGreenColor"/>
+                            </state>
+                            <connections>
+                                <action selector="retryButtonTapped:" destination="9TH-pY-nN6" eventType="touchUpInside" id="hBE-gE-FgQ"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="szC-Q5-JdQ" firstAttribute="top" secondItem="691-Mj-zHu" secondAttribute="bottom" constant="8" id="7kS-mu-Kv4"/>
+                        <constraint firstItem="691-Mj-zHu" firstAttribute="leading" secondItem="9TH-pY-nN6" secondAttribute="leading" constant="16" id="A4h-MR-RhO"/>
+                        <constraint firstItem="dmj-3a-idN" firstAttribute="centerX" secondItem="9TH-pY-nN6" secondAttribute="centerX" id="CMm-IB-HEI"/>
+                        <constraint firstItem="PJK-YF-ybE" firstAttribute="leading" secondItem="9TH-pY-nN6" secondAttribute="leading" constant="36" id="HHc-a3-kc6"/>
+                        <constraint firstItem="szC-Q5-JdQ" firstAttribute="trailing" secondItem="691-Mj-zHu" secondAttribute="trailing" id="NEK-t6-vZF"/>
+                        <constraint firstItem="szC-Q5-JdQ" firstAttribute="leading" secondItem="691-Mj-zHu" secondAttribute="leading" id="OZs-Ul-UG4"/>
+                        <constraint firstAttribute="trailing" secondItem="691-Mj-zHu" secondAttribute="trailing" constant="16" id="TkM-k8-hoO"/>
+                        <constraint firstItem="dmj-3a-idN" firstAttribute="leading" secondItem="9TH-pY-nN6" secondAttribute="leading" constant="16" id="ZD3-pZ-Lsj"/>
+                        <constraint firstAttribute="trailing" secondItem="dmj-3a-idN" secondAttribute="trailing" constant="16" id="Zn5-q5-FN2"/>
+                        <constraint firstItem="dmj-3a-idN" firstAttribute="centerY" secondItem="9TH-pY-nN6" secondAttribute="centerY" constant="-60" id="gSz-xx-AIi"/>
+                        <constraint firstItem="691-Mj-zHu" firstAttribute="top" secondItem="dmj-3a-idN" secondAttribute="bottom" constant="16" id="jle-lM-LNA"/>
+                        <constraint firstAttribute="trailing" secondItem="PJK-YF-ybE" secondAttribute="trailing" constant="36" id="kZ5-fj-GK4"/>
+                        <constraint firstAttribute="bottom" secondItem="PJK-YF-ybE" secondAttribute="bottom" constant="60" id="llS-pk-GGa"/>
+                    </constraints>
+                    <connections>
+                        <outlet property="animationView" destination="dmj-3a-idN" id="Y51-RG-bwz"/>
+                        <outlet property="retryButton" destination="PJK-YF-ybE" id="KJj-Hn-FK7"/>
+                    </connections>
+                </view>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -34,14 +92,24 @@
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="Rss-gk-hez" secondAttribute="bottom" constant="20" id="BrD-mn-gnd"/>
                 <constraint firstItem="Rss-gk-hez" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="D8C-x4-Qms"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Rss-gk-hez" secondAttribute="trailing" constant="20" id="LU0-ik-a8g"/>
+                <constraint firstAttribute="bottom" secondItem="9TH-pY-nN6" secondAttribute="bottom" id="QRe-gK-n2X"/>
                 <constraint firstItem="Rss-gk-hez" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="SHi-4o-XsI"/>
+                <constraint firstItem="9TH-pY-nN6" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Z3T-9h-4D5"/>
+                <constraint firstItem="9TH-pY-nN6" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="fyG-Kf-TIR"/>
+                <constraint firstItem="9TH-pY-nN6" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="yOC-Mq-S0j"/>
             </constraints>
-            <point key="canvasLocation" x="86" y="21"/>
+            <point key="canvasLocation" x="84.732824427480907" y="20.422535211267608"/>
         </view>
     </objects>
     <resources>
+        <systemColor name="secondaryLabelColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

@@ -12,6 +12,7 @@ enum Section {
 
 class RepositoriesViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var errorView: ErrorView!
 
     private lazy var dataSource = configureDataSource()
     private var viewModel: TrendingRepoViewModelType
@@ -19,6 +20,7 @@ class RepositoriesViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = viewModel.title
+        errorView.delegate = self
         setupTableView()
         fetchRepositories()
     }
@@ -38,6 +40,34 @@ class RepositoriesViewController: UIViewController {
         tableView.delegate = self
     }
 
+    private func fetchRepositories() {
+        showShimmer()
+        viewModel.fetchTrendingRepositories {  [weak self] result in
+            guard let self = self else { return }
+            self.hideShimmer()
+            if result == nil {
+                DispatchQueue.main.async { [weak self] in
+                    self?.errorView.isHidden = false
+                }
+            }
+            else {
+                self.hideShimmer()
+                self.updateSnapShot(trendingItems: result!)
+            }
+        }
+    }
+
+    private func showShimmer() {
+        tableView.showTableViewSkeleton()
+    }
+
+    private func hideShimmer() {
+        tableView.hideTableViewSkeleton()
+    }
+}
+
+ // MARK: - UIDiffable DataSourec methods
+extension RepositoriesViewController {
     private func configureDataSource() -> UITableViewDiffableDataSource<Section, TrendingItemModel> {
 
         let dataSource = TableViewSkeletonDiffableDataSource(tableView: tableView, cellProvider: { [weak self]  (tableView, indexPath, itemIdentifier) -> UITableViewCell? in
@@ -50,33 +80,11 @@ class RepositoriesViewController: UIViewController {
         return dataSource
     }
 
-    private func fetchRepositories() {
-        showShimmer()
-        viewModel.fetchTrendingRepositories {  [weak self] result in
-            guard let self = self else { return }
-            self.hideShimmer()
-            if result == nil {
-            }
-            else {
-                self.hideShimmer()
-                self.updateSnapShot(trendingItems: result!)
-            }
-        }
-    }
-
     private func updateSnapShot(trendingItems: [TrendingItemModel]) {
         var snapShot = NSDiffableDataSourceSnapshot<Section, TrendingItemModel>()
         snapShot.appendSections([.trendingRepositories])
         snapShot.appendItems(trendingItems)
         dataSource.apply(snapShot)
-    }
-
-    private func showShimmer() {
-        tableView.showTableViewSkeleton()
-    }
-
-    private func hideShimmer() {
-        tableView.hideTableViewSkeleton()
     }
 }
 
@@ -93,5 +101,13 @@ extension RepositoriesViewController: UITableViewDelegate {
         var newSnapshot = dataSource.snapshot()
         newSnapshot.reloadItems([selectedItemIdentifier])
         dataSource.apply(newSnapshot)
+    }
+}
+
+ // MARK: - ErrorView Delegate
+extension RepositoriesViewController: ErrorViewDelegate {
+    func retryButtonDidTapped() {
+        errorView.isHidden = true
+        fetchRepositories()
     }
 }

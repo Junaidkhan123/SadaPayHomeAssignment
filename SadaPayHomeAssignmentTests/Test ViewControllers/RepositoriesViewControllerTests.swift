@@ -79,6 +79,21 @@ final class RepositoriesViewControllerTests: XCTestCase {
         }
     }
 
+    // MARK: - ErrorView Tests
+    func test_WhenInitiliazed_ThenControllerHasErrorView() {
+        XCTAssertNotNil(sut.errorView)
+    }
+
+    func test_WhenDataFetchingFailed_ThenErrorViewIsVisible() throws {
+        let mockFailureViewModel = MockFailureTrendingViewModel()
+        let _ = makeSut(viewModel: mockFailureViewModel)
+        
+        mockFailureViewModel.fetchTrendingRepositories { _ in }
+        
+        XCTAssertEqual(false, sut.errorView.isHidden)
+    }
+
+
     // MARK: - Helper
     func makeSut(viewModel: TrendingRepoViewModelType = MockSuccessTrendingViewModel()) -> RepositoriesViewController {
         let sut = RepositoriesViewController(viewModel: viewModel)
