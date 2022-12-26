@@ -145,6 +145,42 @@
 			path = Extension;
 			sourceTree = "<group>";
 		};
+		390A9959295A0ED700754FF5 /* Reposritories */ = {
+			isa = PBXGroup;
+			children = (
+				390A995A295A0EFC00754FF5 /* ViewController */,
+				390A995B295A0F1100754FF5 /* TableViewCell */,
+				390A995C295A0F3200754FF5 /* ErroView */,
+				3976A05129575A6300F2C7AD /* ViewModel */,
+			);
+			path = Reposritories;
+			sourceTree = "<group>";
+		};
+		390A995A295A0EFC00754FF5 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				3976A05E29587B0100F2C7AD /* RepositoriesViewController.swift */,
+				3976A05F29587B0100F2C7AD /* RepositoriesViewController.xib */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		390A995B295A0F1100754FF5 /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				3976A06229587DBC00F2C7AD /* RepoTableViewCell.swift */,
+				3976A06329587DBC00F2C7AD /* RepoTableViewCell.xib */,
+			);
+			path = TableViewCell;
+			sourceTree = "<group>";
+		};
+		390A995C295A0F3200754FF5 /* ErroView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ErroView;
+			sourceTree = "<group>";
+		};
 		3913F51D29562BDF0098B723 /* Service */ = {
 			isa = PBXGroup;
 			children = (
@@ -235,11 +271,7 @@
 			isa = PBXGroup;
 			children = (
 				390A9953295A042000754FF5 /* SkeletonDataSource */,
-				3976A05129575A6300F2C7AD /* ViewModel */,
-				3976A05E29587B0100F2C7AD /* RepositoriesViewController.swift */,
-				3976A05F29587B0100F2C7AD /* RepositoriesViewController.xib */,
-				3976A06229587DBC00F2C7AD /* RepoTableViewCell.swift */,
-				3976A06329587DBC00F2C7AD /* RepoTableViewCell.xib */,
+				390A9959295A0ED700754FF5 /* Reposritories */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
