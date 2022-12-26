@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		390A9955295A043C00754FF5 /* TableViewSkeletonDiffableDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 390A9954295A043C00754FF5 /* TableViewSkeletonDiffableDataSource.swift */; };
+		390A9958295A0A5C00754FF5 /* Ext+UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 390A9957295A0A5C00754FF5 /* Ext+UITableView.swift */; };
 		3913F52129562E2F0098B723 /* OwnerModelStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3913F52029562E2F0098B723 /* OwnerModelStub.swift */; };
 		3913F52329562ED50098B723 /* TrendingItemStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3913F52229562ED50098B723 /* TrendingItemStub.swift */; };
 		3913F52529562F8C0098B723 /* TrendingItemResultStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3913F52429562F8C0098B723 /* TrendingItemResultStub.swift */; };
@@ -63,6 +64,7 @@
 
 /* Begin PBXFileReference section */
 		390A9954295A043C00754FF5 /* TableViewSkeletonDiffableDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewSkeletonDiffableDataSource.swift; sourceTree = "<group>"; };
+		390A9957295A0A5C00754FF5 /* Ext+UITableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Ext+UITableView.swift"; path = "../../../../../Documents/Ext+UITableView.swift"; sourceTree = "<group>"; };
 		3913F52029562E2F0098B723 /* OwnerModelStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OwnerModelStub.swift; sourceTree = "<group>"; };
 		3913F52229562ED50098B723 /* TrendingItemStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingItemStub.swift; sourceTree = "<group>"; };
 		3913F52429562F8C0098B723 /* TrendingItemResultStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingItemResultStub.swift; sourceTree = "<group>"; };
@@ -135,6 +137,14 @@
 			path = SkeletonDataSource;
 			sourceTree = "<group>";
 		};
+		390A9956295A0A0C00754FF5 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				390A9957295A0A5C00754FF5 /* Ext+UITableView.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 		3913F51D29562BDF0098B723 /* Service */ = {
 			isa = PBXGroup;
 			children = (
@@ -197,6 +207,7 @@
 				392BAB9A295218BD0043F668 /* Scenes */,
 				392BAB9B295218CB0043F668 /* Networking */,
 				392BAB99295218A90043F668 /* Resources */,
+				390A9956295A0A0C00754FF5 /* Extension */,
 			);
 			path = SadaPayHomeAssignment;
 			sourceTree = "<group>";
@@ -499,6 +510,7 @@
 				3976A05329575A7500F2C7AD /* TrendingRepoViewModel.swift in Sources */,
 				392BAB5E295212560043F668 /* AppDelegate.swift in Sources */,
 				3976A06429587DBC00F2C7AD /* RepoTableViewCell.swift in Sources */,
+				390A9958295A0A5C00754FF5 /* Ext+UITableView.swift in Sources */,
 				3972A0F529546FD300B02E74 /* TrendingItemResult.swift in Sources */,
 				392BAB60295212560043F668 /* SceneDelegate.swift in Sources */,
 				3972A1BE2954961500B02E74 /* RequestType.swift in Sources */,

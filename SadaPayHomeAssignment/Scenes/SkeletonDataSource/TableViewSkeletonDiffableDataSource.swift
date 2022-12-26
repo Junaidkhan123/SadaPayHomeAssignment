@@ -5,7 +5,6 @@
 //  Created by Junaid on 26/12/2022.
 //
 
-import Foundation
 import UIKit
 import SkeletonView
 class TableViewSkeletonDiffableDataSource: UITableViewDiffableDataSource<Section, TrendingItemModel>, SkeletonTableViewDataSource {

@@ -34,28 +34,31 @@ class RepositoriesViewController: UIViewController {
 
     private func setupTableView() {
         tableView.register(UINib(nibName: "RepoTableViewCell", bundle: nil), forCellReuseIdentifier: RepoTableViewCell.identifier)
-        tableView.delegate = self
         tableView.dataSource = dataSource
+        tableView.delegate = self
     }
 
     private func configureDataSource() -> UITableViewDiffableDataSource<Section, TrendingItemModel> {
 
-        let dataSource = UITableViewDiffableDataSource<Section, TrendingItemModel>(tableView: tableView, cellProvider: { [weak self]  (tableView, indexPath, trendingItemModel) -> UITableViewCell? in
+        let dataSource = TableViewSkeletonDiffableDataSource(tableView: tableView, cellProvider: { [weak self]  (tableView, indexPath, itemIdentifier) -> UITableViewCell? in
             let cell = tableView.dequeueReusableCell(withIdentifier: RepoTableViewCell.identifier, for: indexPath) as! RepoTableViewCell
             let viewModel = self?.viewModel.getTrendingCellViewModel(at: indexPath.row)
             cell.configCell(with: viewModel!)
             return cell
         })
-
+        dataSource.defaultRowAnimation = .fade
         return dataSource
     }
 
     private func fetchRepositories() {
+        showShimmer()
         viewModel.fetchTrendingRepositories {  [weak self] result in
             guard let self = self else { return }
+            self.hideShimmer()
             if result == nil {
             }
             else {
+                self.hideShimmer()
                 self.updateSnapShot(trendingItems: result!)
             }
         }
@@ -66,6 +69,14 @@ class RepositoriesViewController: UIViewController {
         snapShot.appendSections([.trendingRepositories])
         snapShot.appendItems(trendingItems)
         dataSource.apply(snapShot)
+    }
+
+    private func showShimmer() {
+        tableView.showTableViewSkeleton()
+    }
+
+    private func hideShimmer() {
+        tableView.hideTableViewSkeleton()
     }
 }
 
