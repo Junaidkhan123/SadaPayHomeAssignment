@@ -34,6 +34,7 @@ class RepositoriesViewController: UIViewController {
 
     private func setupTableView() {
         tableView.register(UINib(nibName: "RepoTableViewCell", bundle: nil), forCellReuseIdentifier: RepoTableViewCell.identifier)
+        tableView.delegate = self
         tableView.dataSource = dataSource
     }
 
@@ -65,5 +66,21 @@ class RepositoriesViewController: UIViewController {
         snapShot.appendSections([.trendingRepositories])
         snapShot.appendItems(trendingItems)
         dataSource.apply(snapShot)
+    }
+}
+
+ // MARK: - TableView Delegate Method
+extension RepositoriesViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+
+        guard let selectedItemIdentifier = self.dataSource.itemIdentifier(for: indexPath) else { return }
+        selectedItemIdentifier.isCollapsed.toggle()
+
+        var viewModel = viewModel.getTrendingCellViewModel(at: indexPath.row)
+        viewModel.isCollapsed = selectedItemIdentifier.isCollapsed
+
+        var newSnapshot = dataSource.snapshot()
+        newSnapshot.reloadItems([selectedItemIdentifier])
+        dataSource.apply(newSnapshot)
     }
 }

@@ -10,7 +10,7 @@ import Foundation
 
 struct MockTrendingRepoCellViewModel: TrendingRepoCellViewModelType {
 
-    var isExpand: Bool = true
+    var isCollapsed: Bool = true
     var name: String = TrendingItemModel.stub.name
     var ownerLogin: String = OwnerModel.stub.login
     var trendingRepositoryDescription: String = TrendingItemModel.stub.repoDescription
@@ -19,6 +19,6 @@ struct MockTrendingRepoCellViewModel: TrendingRepoCellViewModelType {
     var avatarUrl: URL = URL(string: OwnerModel.stub.avatarUrl)!
 
     init(isExpand: Bool = true ) {
-        self.isExpand = isExpand
+        self.isCollapsed = isExpand
     }
 }

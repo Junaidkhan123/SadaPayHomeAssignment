@@ -31,5 +31,8 @@ class RepoTableViewCell: UITableViewCell {
         languageLabel.text = viewModel.language
         starsCountLabel.text = viewModel.stars
         avatarImageView.kf.setImage(with: viewModel.avatarUrl)
+
+        repoDescriptionLabel.isHidden = viewModel.isCollapsed
+        stackView.isHidden = viewModel.isCollapsed
     }
 }

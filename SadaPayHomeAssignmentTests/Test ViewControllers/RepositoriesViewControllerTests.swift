@@ -45,7 +45,6 @@ final class RepositoriesViewControllerTests: XCTestCase {
         XCTAssertTrue(tableView.isDescriptionLabelHidden(at: 0))
         XCTAssertTrue(tableView.isStackViewHidden(at: 0))
 
-
     }
 
     func test_WhenDataIsFetchedSuccessFully_ThenReturnsCorrectNumberOfRows() throws {
@@ -55,6 +54,20 @@ final class RepositoriesViewControllerTests: XCTestCase {
         mockSuccessViewModel.fetchTrendingRepositories { repositories in
             XCTAssertEqual(sut.tableView.numberOfRows(inSection: 0), repositories?.count)
         }
+    }
+
+    func test_WhenTableViewCellSelected_ThenNotifiesDelegate() throws {
+        let mockSuccessViewModel = MockSuccessTrendingViewModel()
+        let sut = makeSut(viewModel: mockSuccessViewModel)
+        let tableView = try XCTUnwrap(sut.tableView)
+
+        let _ = try XCTUnwrap(
+            tableView.cell(at: 0)
+        )
+
+        sut.tableView.select(at: 0)
+        XCTAssertEqual(sut.tableView.isDescriptionLabelHidden(at: 0), true)
+
     }
 
     func test_WhenDataFetchingFailed_ThenItReturnsNilRepositories() throws {
@@ -82,30 +95,34 @@ private extension UITableView {
     }
 
     func ownerName(at row: Int) -> String? {
-        cell(at:row).ownerNameLabel?.text
+        cell(at: row).ownerNameLabel?.text
     }
 
     func repositoryName(at row: Int) -> String? {
-        cell(at:row).repositoryNameLabel?.text
+        cell(at: row).repositoryNameLabel?.text
     }
 
     func repoDescription(at row: Int) -> String? {
-        cell(at:row).repoDescriptionLabel?.text
+        cell(at: row).repoDescriptionLabel?.text
     }
 
     func language(at row: Int) -> String? {
-        cell(at:row).languageLabel?.text
+        cell(at: row).languageLabel?.text
     }
 
     func starCount(at row: Int) -> String? {
-        cell(at:row).starsCountLabel?.text
+        cell(at: row).starsCountLabel?.text
     }
 
     func isDescriptionLabelHidden(at row: Int) -> Bool {
-        cell(at:row).repoDescriptionLabel.isHidden
+        cell(at: row).repoDescriptionLabel.isHidden
     }
 
     func isStackViewHidden(at row: Int) -> Bool {
-        cell(at:row).stackView.isHidden
+        cell(at: row).stackView.isHidden
+    }
+
+    func select(at row: Int) {
+        delegate?.tableView?(self, didSelectRowAt: IndexPath(row: row, section: 0))
     }
 }

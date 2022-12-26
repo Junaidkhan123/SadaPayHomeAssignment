@@ -66,11 +66,8 @@ final class TrendingRepoViewModelTests: XCTestCase {
         XCTAssertEqual(outputViewMCellViewModel.trendingRepositoryDescription, mockCellViewModel.trendingRepositoryDescription)
         XCTAssertEqual(outputViewMCellViewModel.stars, mockCellViewModel.stars)
         XCTAssertEqual(outputViewMCellViewModel.language, mockCellViewModel.language)
-        XCTAssertEqual(outputViewMCellViewModel.isExpand, mockCellViewModel.isExpand)
-
         XCTAssertEqual(outputViewMCellViewModel.ownerLogin, mockCellViewModel.ownerLogin)
         XCTAssertEqual(outputViewMCellViewModel.avatarUrl, mockCellViewModel.avatarUrl)
-
     }
 
 }

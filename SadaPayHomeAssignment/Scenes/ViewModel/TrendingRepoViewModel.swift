@@ -40,7 +40,7 @@ final class TrendingRepoViewModel: TrendingRepoViewModelType {
         
         let trendingRepo = trendingRepo[index]
         let avatarURL = URL(string: trendingRepo.owner.avatarUrl)!
-        return TrendingRepoCellViewModel(isExpand: true,
+        return TrendingRepoCellViewModel(isCollapsed: trendingRepo.isCollapsed,
                                          name: trendingRepo.name,
                                          ownerLogin: trendingRepo.owner.login,
                                          trendingRepositoryDescription: trendingRepo.repoDescription,
