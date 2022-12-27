@@ -275,12 +275,12 @@
 			isa = PBXGroup;
 			children = (
 				392BAB6B295212580043F668 /* Info.plist */,
-				392BAB9C295218EC0043F668 /* Model */,
 				392BAB982952181A0043F668 /* App */,
-				392BAB9A295218BD0043F668 /* Scenes */,
 				392BAB9B295218CB0043F668 /* Networking */,
-				392BAB99295218A90043F668 /* Resources */,
+				392BAB9C295218EC0043F668 /* Model */,
 				390A9972295AF5A200754FF5 /* App Coordinator */,
+				392BAB9A295218BD0043F668 /* Scenes */,
+				392BAB99295218A90043F668 /* Resources */,
 				390A9956295A0A0C00754FF5 /* Extension */,
 			);
 			path = SadaPayHomeAssignment;
@@ -437,12 +437,12 @@
 		39B0E45C295253E000006043 /* SadaPayHomeAssignmentTests */ = {
 			isa = PBXGroup;
 			children = (
-				390A997A295B11FB00754FF5 /* Test Extension */,
-				390A9975295AFA3900754FF5 /* Test Coordinator */,
-				3976A05B295879E200F2C7AD /* Test ViewControllers */,
-				3976A04E295759B400F2C7AD /* Test ViewModel */,
-				3972A0F62954718000B02E74 /* Test Networking */,
 				39B0E47729525A1C00006043 /* Test Models */,
+				390A9975295AFA3900754FF5 /* Test Coordinator */,
+				3972A0F62954718000B02E74 /* Test Networking */,
+				3976A04E295759B400F2C7AD /* Test ViewModel */,
+				3976A05B295879E200F2C7AD /* Test ViewControllers */,
+				390A997A295B11FB00754FF5 /* Test Extension */,
 			);
 			path = SadaPayHomeAssignmentTests;
 			sourceTree = "<group>";
