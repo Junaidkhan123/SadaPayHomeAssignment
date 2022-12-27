@@ -101,7 +101,6 @@ final class RepositoriesViewControllerTests: XCTestCase {
 
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
             expectation.fulfill()
-            let isHidden = sut.errorView.isHidden
         }
 
         waitForExpectations(timeout: 0.2)
