@@ -8,6 +8,7 @@
 import Foundation
 @testable import SadaPayHomeAssignment
 final class MockFailureTrendingViewModel: TrendingRepoViewModelType {
+
     func getTrendingCellViewModel(at index: Int) -> TrendingRepoCellViewModelType {
         return MockTrendingRepoCellViewModel()
     }

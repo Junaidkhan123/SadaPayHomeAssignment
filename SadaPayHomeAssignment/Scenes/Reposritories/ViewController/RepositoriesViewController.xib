@@ -28,7 +28,7 @@
                         <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
                     </userDefinedRuntimeAttributes>
                 </tableView>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9TH-pY-nN6" customClass="ErrorView" customModule="SadaPayHomeAssignment" customModuleProvider="target">
+                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9TH-pY-nN6" customClass="ErrorView" customModule="SadaPayHomeAssignment" customModuleProvider="target">
                     <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dmj-3a-idN" customClass="LottieAnimationView" customModule="Lottie">

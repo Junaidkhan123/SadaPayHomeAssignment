@@ -79,6 +79,15 @@ final class RepositoriesViewControllerTests: XCTestCase {
         }
     }
 
+    // MARK: - RefreshController Tests
+    func test_whenRefreshControllerPulledForRefresh_ThenRefreshIsCalling() {
+        let refreshController = sut.refreshControl
+
+        refreshController.sendActions(for: .valueChanged)
+
+        XCTAssertEqual(refreshController.actions(forTarget: sut, forControlEvent: .valueChanged)?.first, "handleRefresh")
+
+    }
     // MARK: - ErrorView Tests
     func test_WhenInitiliazed_ThenControllerHasErrorView() {
         XCTAssertNotNil(sut.errorView)
@@ -86,11 +95,17 @@ final class RepositoriesViewControllerTests: XCTestCase {
 
     func test_WhenDataFetchingFailed_ThenErrorViewIsVisible() throws {
         let mockFailureViewModel = MockFailureTrendingViewModel()
-        let _ = makeSut(viewModel: mockFailureViewModel)
-        
-        mockFailureViewModel.fetchTrendingRepositories { _ in }
-        
-        XCTAssertEqual(false, sut.errorView.isHidden)
+        let sut = makeSut(viewModel: mockFailureViewModel)
+
+        let expectation = self.expectation(description: "Error view hidden expectations")
+
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
+            expectation.fulfill()
+            let isHidden = sut.errorView.isHidden
+        }
+
+        waitForExpectations(timeout: 0.2)
+        XCTAssertFalse(sut.errorView.isHidden)
     }
 
 

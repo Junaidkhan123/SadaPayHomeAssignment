@@ -12,6 +12,8 @@
 		390A9970295A253E00754FF5 /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 390A996F295A253E00754FF5 /* ErrorView.swift */; };
 		390A9974295AF69800754FF5 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 390A9973295AF69800754FF5 /* Coordinator.swift */; };
 		390A9977295AFC7300754FF5 /* CoordinatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 390A9976295AFC7300754FF5 /* CoordinatorTests.swift */; };
+		390A9979295B112500754FF5 /* Ext+RefreshController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 390A9978295B112500754FF5 /* Ext+RefreshController.swift */; };
+		390A997C295B121300754FF5 /* RefreshControllerExtenionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 390A997B295B121300754FF5 /* RefreshControllerExtenionTests.swift */; };
 		3913F52129562E2F0098B723 /* OwnerModelStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3913F52029562E2F0098B723 /* OwnerModelStub.swift */; };
 		3913F52329562ED50098B723 /* TrendingItemStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3913F52229562ED50098B723 /* TrendingItemStub.swift */; };
 		3913F52529562F8C0098B723 /* TrendingItemResultStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3913F52429562F8C0098B723 /* TrendingItemResultStub.swift */; };
@@ -71,6 +73,8 @@
 		390A996F295A253E00754FF5 /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
 		390A9973295AF69800754FF5 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		390A9976295AFC7300754FF5 /* CoordinatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorTests.swift; sourceTree = "<group>"; };
+		390A9978295B112500754FF5 /* Ext+RefreshController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ext+RefreshController.swift"; sourceTree = "<group>"; };
+		390A997B295B121300754FF5 /* RefreshControllerExtenionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefreshControllerExtenionTests.swift; sourceTree = "<group>"; };
 		3913F52029562E2F0098B723 /* OwnerModelStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OwnerModelStub.swift; sourceTree = "<group>"; };
 		3913F52229562ED50098B723 /* TrendingItemStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingItemStub.swift; sourceTree = "<group>"; };
 		3913F52429562F8C0098B723 /* TrendingItemResultStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingItemResultStub.swift; sourceTree = "<group>"; };
@@ -147,6 +151,7 @@
 			isa = PBXGroup;
 			children = (
 				390A9957295A0A5C00754FF5 /* Ext+UITableView.swift */,
+				390A9978295B112500754FF5 /* Ext+RefreshController.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -165,6 +170,7 @@
 		390A995A295A0EFC00754FF5 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				390A9953295A042000754FF5 /* SkeletonDataSource */,
 				3976A05E29587B0100F2C7AD /* RepositoriesViewController.swift */,
 				3976A05F29587B0100F2C7AD /* RepositoriesViewController.xib */,
 			);
@@ -202,6 +208,14 @@
 				390A9976295AFC7300754FF5 /* CoordinatorTests.swift */,
 			);
 			path = "Test Coordinator";
+			sourceTree = "<group>";
+		};
+		390A997A295B11FB00754FF5 /* Test Extension */ = {
+			isa = PBXGroup;
+			children = (
+				390A997B295B121300754FF5 /* RefreshControllerExtenionTests.swift */,
+			);
+			path = "Test Extension";
 			sourceTree = "<group>";
 		};
 		3913F51D29562BDF0098B723 /* Service */ = {
@@ -294,7 +308,6 @@
 		392BAB9A295218BD0043F668 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
-				390A9953295A042000754FF5 /* SkeletonDataSource */,
 				390A9959295A0ED700754FF5 /* Reposritories */,
 			);
 			path = Scenes;
@@ -387,7 +400,7 @@
 		3976A04E295759B400F2C7AD /* Test ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				3976A056295865E900F2C7AD /* Stub */,
+				3976A056295865E900F2C7AD /* Mock */,
 				3976A04F295759C800F2C7AD /* TrendingRepoViewModelTests.swift */,
 				3976A05929586ECD00F2C7AD /* TrendingCellViewModelTests.swift */,
 			);
@@ -403,14 +416,14 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
-		3976A056295865E900F2C7AD /* Stub */ = {
+		3976A056295865E900F2C7AD /* Mock */ = {
 			isa = PBXGroup;
 			children = (
 				3976A0572958660900F2C7AD /* MockTrendingRepoCellViewModel.swift */,
 				3976A06629589D8A00F2C7AD /* MockSuccessTrendingViewModel.swift */,
 				3976A06829589DB800F2C7AD /* MockFailureTrendingViewModel.swift */,
 			);
-			path = Stub;
+			path = Mock;
 			sourceTree = "<group>";
 		};
 		3976A05B295879E200F2C7AD /* Test ViewControllers */ = {
@@ -424,6 +437,7 @@
 		39B0E45C295253E000006043 /* SadaPayHomeAssignmentTests */ = {
 			isa = PBXGroup;
 			children = (
+				390A997A295B11FB00754FF5 /* Test Extension */,
 				390A9975295AFA3900754FF5 /* Test Coordinator */,
 				3976A05B295879E200F2C7AD /* Test ViewControllers */,
 				3976A04E295759B400F2C7AD /* Test ViewModel */,
@@ -562,6 +576,7 @@
 				3976A055295864BC00F2C7AD /* TrendingRepoCellViewModel.swift in Sources */,
 				3972A1D02954AE0F00B02E74 /* WebClient.swift in Sources */,
 				390A9955295A043C00754FF5 /* TableViewSkeletonDiffableDataSource.swift in Sources */,
+				390A9979295B112500754FF5 /* Ext+RefreshController.swift in Sources */,
 				3972A1CA2954A46C00B02E74 /* GithubRequest.swift in Sources */,
 				390A9974295AF69800754FF5 /* Coordinator.swift in Sources */,
 				39B0E4762952572600006043 /* TrendingItemModel.swift in Sources */,
@@ -590,6 +605,7 @@
 				3972A0F329546F3200B02E74 /* TrendingItemResultTests.swift in Sources */,
 				3913F52329562ED50098B723 /* TrendingItemStub.swift in Sources */,
 				3976A0582958660900F2C7AD /* MockTrendingRepoCellViewModel.swift in Sources */,
+				390A997C295B121300754FF5 /* RefreshControllerExtenionTests.swift in Sources */,
 				3976A050295759C800F2C7AD /* TrendingRepoViewModelTests.swift in Sources */,
 				3913F52129562E2F0098B723 /* OwnerModelStub.swift in Sources */,
 				3976A06929589DB800F2C7AD /* MockFailureTrendingViewModel.swift in Sources */,

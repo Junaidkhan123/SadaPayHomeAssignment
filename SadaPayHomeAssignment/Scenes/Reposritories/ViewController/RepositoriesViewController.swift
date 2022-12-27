@@ -11,20 +11,26 @@ enum Section {
 }
 
 class RepositoriesViewController: UIViewController {
+     // MARK: - UI Elements
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var errorView: ErrorView!
+    let  refreshControl = UIRefreshControl()
 
+     // MARK: - properties
     private lazy var dataSource = configureDataSource()
     private var viewModel: TrendingRepoViewModelType
 
+     // MARK: - life cycle of ViewController
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = viewModel.title
         errorView.delegate = self
         setupTableView()
+        setupRefreshControl()
         fetchRepositories()
     }
 
+     // MARK: - Initiliazers
     init(viewModel: TrendingRepoViewModelType = TrendingRepoViewModel()) {
         self.viewModel = viewModel
         super.init(nibName: "RepositoriesViewController", bundle: nil)
@@ -34,12 +40,36 @@ class RepositoriesViewController: UIViewController {
         fatalError("init(coder:) has not been implemented")
     }
 
+     // MARK: - UI Setup method
     private func setupTableView() {
         tableView.register(UINib(nibName: "RepoTableViewCell", bundle: nil), forCellReuseIdentifier: RepoTableViewCell.identifier)
         tableView.dataSource = dataSource
         tableView.delegate = self
     }
 
+    private func setupRefreshControl() {
+        refreshControl.addTarget(self, action: #selector(handleRefresh), for: .valueChanged)
+        refreshControl.tintColor = .systemGray
+        tableView.refreshControl = refreshControl
+    }
+
+     // MARK: - Shimmer Methods
+    private func showShimmer() {
+        tableView.showTableViewSkeleton()
+    }
+
+    private func hideShimmer() {
+        tableView.hideTableViewSkeleton()
+    }
+
+     // MARK: - RefreshController Trigger
+    @objc private func handleRefresh() {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.8) { [weak self] in
+            self?.fetchRepositories()
+        }
+    }
+
+     // MARK: - APi Perfom
     private func fetchRepositories() {
         showShimmer()
         viewModel.fetchTrendingRepositories {  [weak self] result in
@@ -53,16 +83,9 @@ class RepositoriesViewController: UIViewController {
             else {
                 self.hideShimmer()
                 self.updateSnapShot(trendingItems: result!)
+                self.refreshControl.endRefreshing(delay: 1.0)
             }
         }
-    }
-
-    private func showShimmer() {
-        tableView.showTableViewSkeleton()
-    }
-
-    private func hideShimmer() {
-        tableView.hideTableViewSkeleton()
     }
 }
 
