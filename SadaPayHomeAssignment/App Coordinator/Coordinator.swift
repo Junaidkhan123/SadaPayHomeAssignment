@@ -21,6 +21,7 @@ class MainCoordinator: Coordinator {
 
     func configureRootViewController() {
         let repoViewController = RepositoriesViewController()
+        repoViewController.coordinator = self
         self.navigationController.pushViewController(repoViewController, animated: false)
     }
 }

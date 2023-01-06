@@ -19,7 +19,7 @@ class RepositoriesViewController: UIViewController {
      // MARK: - properties
     private lazy var dataSource = configureDataSource()
     private var viewModel: TrendingRepoViewModelType
-
+    weak var coordinator: Coordinator?
      // MARK: - life cycle of ViewController
     override func viewDidLoad() {
         super.viewDidLoad()
