@@ -55,6 +55,8 @@
 		3976A06929589DB800F2C7AD /* MockFailureTrendingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3976A06829589DB800F2C7AD /* MockFailureTrendingViewModel.swift */; };
 		39B0E4742952543A00006043 /* TrendingItemModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39B0E4732952543A00006043 /* TrendingItemModelTests.swift */; };
 		39B0E4762952572600006043 /* TrendingItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39B0E4752952572600006043 /* TrendingItemModel.swift */; };
+		39F5DF98296C44D700B81FEE /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39F5DF96296C44D700B81FEE /* DetailViewController.swift */; };
+		39F5DF99296C44D700B81FEE /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39F5DF97296C44D700B81FEE /* DetailViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -116,6 +118,8 @@
 		39B0E45B295253E000006043 /* SadaPayHomeAssignmentTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SadaPayHomeAssignmentTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		39B0E4732952543A00006043 /* TrendingItemModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingItemModelTests.swift; sourceTree = "<group>"; };
 		39B0E4752952572600006043 /* TrendingItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingItemModel.swift; sourceTree = "<group>"; };
+		39F5DF96296C44D700B81FEE /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		39F5DF97296C44D700B81FEE /* DetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -308,6 +312,7 @@
 		392BAB9A295218BD0043F668 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				39F5DF95296C44B200B81FEE /* Detail ViewController */,
 				390A9959295A0ED700754FF5 /* Reposritories */,
 			);
 			path = Scenes;
@@ -457,6 +462,15 @@
 			path = "Test Models";
 			sourceTree = "<group>";
 		};
+		39F5DF95296C44B200B81FEE /* Detail ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				39F5DF96296C44D700B81FEE /* DetailViewController.swift */,
+				39F5DF97296C44D700B81FEE /* DetailViewController.xib */,
+			);
+			path = "Detail ViewController";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -550,6 +564,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				392BABA3295222C40043F668 /* networkError_lottie.json in Resources */,
+				39F5DF99296C44D700B81FEE /* DetailViewController.xib in Resources */,
 				392BAB6A295212580043F668 /* LaunchScreen.storyboard in Resources */,
 				3976A06129587B0100F2C7AD /* RepositoriesViewController.xib in Resources */,
 				392BAB67295212580043F668 /* Assets.xcassets in Resources */,
@@ -577,6 +592,7 @@
 				3972A1D02954AE0F00B02E74 /* WebClient.swift in Sources */,
 				390A9955295A043C00754FF5 /* TableViewSkeletonDiffableDataSource.swift in Sources */,
 				390A9979295B112500754FF5 /* Ext+RefreshController.swift in Sources */,
+				39F5DF98296C44D700B81FEE /* DetailViewController.swift in Sources */,
 				3972A1CA2954A46C00B02E74 /* GithubRequest.swift in Sources */,
 				390A9974295AF69800754FF5 /* Coordinator.swift in Sources */,
 				39B0E4762952572600006043 /* TrendingItemModel.swift in Sources */,

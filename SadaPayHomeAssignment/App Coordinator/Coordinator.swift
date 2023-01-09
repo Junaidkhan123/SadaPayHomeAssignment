@@ -27,6 +27,7 @@ class MainCoordinator: Coordinator {
     }
 
     func showDetailViewController(with repoDesription: String) {
-        fatalError("Not implemented yet")
+        let viewController = DetailViewController()
+        navigationController.pushViewController(viewController, animated: true)
     }
 }
