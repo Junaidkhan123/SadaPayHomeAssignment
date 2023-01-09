@@ -64,9 +64,12 @@ final class RepositoriesViewControllerTests: XCTestCase {
         let _ = try XCTUnwrap(
             tableView.cell(at: 0)
         )
-
+        let mockCoordinator = MockCoordinator(navigationController: UINavigationController())
+        sut.coordinator = mockCoordinator
         sut.tableView.select(at: 0)
-        XCTAssertEqual(sut.tableView.isDescriptionLabelHidden(at: 0), true)
+
+        XCTAssertTrue(mockCoordinator.showDetaiScreenMethodCalled)
+        //XCTAssertEqual(sut.tableView.isDescriptionLabelHidden(at: 0), true)
 
     }
 
@@ -153,4 +156,20 @@ private extension UITableView {
     func select(at row: Int) {
         delegate?.tableView?(self, didSelectRowAt: IndexPath(row: row, section: 0))
     }
+}
+
+class MockCoordinator: Coordinator {
+
+    var showDetaiScreenMethodCalled = false
+    var navigationController: UINavigationController
+    func configureRootViewController() {}
+
+    init(navigationController: UINavigationController) {
+        self.navigationController = navigationController
+    }
+
+    func showDetailViewController(with repoDesription: String) {
+        showDetaiScreenMethodCalled = true
+    }
+
 }

@@ -115,15 +115,18 @@ extension RepositoriesViewController {
 extension RepositoriesViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
 
-        guard let selectedItemIdentifier = self.dataSource.itemIdentifier(for: indexPath) else { return }
-        selectedItemIdentifier.isCollapsed.toggle()
+//        guard let selectedItemIdentifier = self.dataSource.itemIdentifier(for: indexPath) else { return }
+//        selectedItemIdentifier.isCollapsed.toggle()
 
-        var viewModel = viewModel.getTrendingCellViewModel(at: indexPath.row)
-        viewModel.isCollapsed = selectedItemIdentifier.isCollapsed
+        let viewModel = viewModel.getTrendingCellViewModel(at: indexPath.row)
 
-        var newSnapshot = dataSource.snapshot()
-        newSnapshot.reloadItems([selectedItemIdentifier])
-        dataSource.apply(newSnapshot)
+        coordinator?.showDetailViewController(with: viewModel.trendingRepositoryDescription)
+
+//        viewModel.isCollapsed = selectedItemIdentifier.isCollapsed
+
+//        var newSnapshot = dataSource.snapshot()
+//        newSnapshot.reloadItems([selectedItemIdentifier])
+//        dataSource.apply(newSnapshot)
     }
 }
 

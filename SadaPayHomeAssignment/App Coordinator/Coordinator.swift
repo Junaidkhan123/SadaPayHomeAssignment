@@ -9,6 +9,7 @@ import UIKit
 protocol Coordinator: AnyObject {
   var navigationController: UINavigationController { get set }
   func configureRootViewController()
+  func showDetailViewController(with repoDesription: String)
 }
 
 class MainCoordinator: Coordinator {
@@ -23,5 +24,9 @@ class MainCoordinator: Coordinator {
         let repoViewController = RepositoriesViewController()
         repoViewController.coordinator = self
         self.navigationController.pushViewController(repoViewController, animated: false)
+    }
+
+    func showDetailViewController(with repoDesription: String) {
+        fatalError("Not implemented yet")
     }
 }
